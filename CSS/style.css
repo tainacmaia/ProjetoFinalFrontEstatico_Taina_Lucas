@@ -1,6 +1,5 @@
 header {
     background-image: url(../Imgs/ABackground.jpg);
-    background-color: black;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top;
@@ -12,10 +11,6 @@ header {
 
 body{
     margin: 0;
-    background-color: black;
-}
-
-footer{
     background-color: black;
 }
 
