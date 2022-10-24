@@ -9,6 +9,33 @@ header{
     margin: 0;
 }
 
+.menu{
+    display: inline;
+    list-style-type: none;
+    font-size: 20pt;
+}
+
+.menu a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+#menuborder{
+    background-color: black;
+    opacity: 70%;
+    height: 45px;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.menu ul li:after {
+    content: '';
+    background: url('../Imgs/Amenuseparator.png') center no-repeat;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
 body{
     background-image: url(../Imgs/ABackgroundMain.jpg);
     margin: 0;
