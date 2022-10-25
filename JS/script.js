@@ -1,4 +1,4 @@
-let time = 1300,
+let time = 1000,
     currentImageIndex = 0,
     images = document
                 .querySelectorAll("#slider img")
@@ -20,9 +20,11 @@ function nextImage() {
 
 function start() {
     setInterval(() => {
-        // troca de image
+        // troca de imagem
         nextImage()
     }, time)
+    
+
 }
 
 window.addEventListener("load", start)

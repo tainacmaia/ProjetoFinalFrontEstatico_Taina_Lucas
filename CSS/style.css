@@ -3,6 +3,7 @@ header{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top;
+    /*background-color: #000B0D;*/
     width: 100%;
     height: 0;
     padding: 0 0 100%;
@@ -44,10 +45,12 @@ header{
     margin-left: 28%;
 }
 
-body{
-    background-image: url('../Imgs/ABackgroundMain.jpg');
-    background-color: black;
+main{
+    background-image: url(../Imgs/ABackgroundMain.jpg);
+    margin: 0;
+    background-color: #000B0D;
     background-position: center;
+    background-repeat:repeat;
 }
 
 footer{
@@ -60,6 +63,10 @@ footer{
     padding: 0 0 100%;
 }
 
+#space {
+    Width: 100%;
+    height: 100vw;
+}
 #slider {
     width: 100%;
     max-width: 5000px;
@@ -80,3 +87,44 @@ footer{
 #slider img.selected { 
     opacity: 1;
 }
+
+.home-nav {
+    background: #031111;
+    background: rgba(3, 17, 17, 0.8);
+    padding: 2px;
+    position: relative;
+    z-index: 499;
+} /*deixa o fundo cinza e opaco*/
+
+.home-nav-inner {
+    text-align: center;
+    margin: 0 auto;
+} /*alinha todo o nav no centro*/
+
+ul.nav-homemenu {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 17px;
+    padding-right: 17px;
+} /*alinha os itens do nav com o fundo cinza opaco*/
+
+.nav-homemenu>li>a{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+} /*arruma o texto de cada item do nav*/
+
+ul.nav-homemenu li {
+    position: relative;
+    z-index: 5;
+    display: block;
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+} /*deixa os itens lado a lado*/
