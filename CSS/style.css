@@ -69,9 +69,10 @@ header{
 
 #header-title{
     display: flex;
-    position: absolute;
+    position: relative;
+    width: 100%;
+    justify-content: center;
     margin-top: 760px;
-    margin-left: 240px;
     color: white;
     font-size: 44pt;
 }
@@ -91,6 +92,7 @@ main{
     margin: auto;
     width: 1010px;
     /* height: 100%; - quando estiver tudo pronto*/
+    /* talvez tenha que adicionar padding */
     height: 1000px;
     border: 5px solid red;  
 }
