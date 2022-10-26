@@ -56,6 +56,16 @@ body{
     border: 5px solid red;
 }
 
+.inline-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border: 5px solid red;
+}
+
 .end-box{
     display: flex;
     align-items: center;
