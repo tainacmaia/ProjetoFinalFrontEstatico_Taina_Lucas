@@ -1,5 +1,5 @@
 body{
-    background-color: #031111;
+    background-color: rgba(0, 11, 13);
     overflow-x: hidden;
 }
 
@@ -80,6 +80,8 @@ footer{
     background-position: center;
     width: 100%;
     height: 300px;
+    padding-top: 30px;
+    color: white;
     border: 5px solid red;
 }
 
@@ -109,8 +111,9 @@ footer{
 }
 
 .home-nav {
-    background: #031111;
-    background: rgba(3, 17, 17, 0.8);
+    display: flex;
+    justify-content: center;
+    background:rgba(0, 11, 13, .6);
     padding: 2px;
     position: relative;
     z-index: 499;
@@ -147,4 +150,13 @@ ul.nav-homemenu li {
     margin: 0;
     padding: 0;
     border: 0;
+    width: 78px;
 } /*deixa os itens lado a lado*/
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-text p{
+    padding-bottom: 5px;
+}
