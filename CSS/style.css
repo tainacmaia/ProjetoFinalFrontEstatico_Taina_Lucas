@@ -94,6 +94,7 @@ main{
     width: 70%;
     height: 100%;
     border: 5px solid red;
+    color: white;
 }
 
 .aside-box{
@@ -104,6 +105,7 @@ main{
     width: 30%;
     height: 100%;
     border: 5px solid red;
+    color: white;
 }
 
 footer{
