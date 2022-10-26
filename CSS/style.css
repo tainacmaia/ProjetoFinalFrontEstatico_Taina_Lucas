@@ -29,10 +29,16 @@ header{
 
 .menu{
     display: flex;
+    position: absolute;
     list-style-type: none;
     font-size: 20pt;
     justify-content: space-around;
     margin-top: auto;
+}
+
+.menu li{
+    display: flex;
+    position: relative;
 }
 
 .menu a{
@@ -45,7 +51,6 @@ header{
     opacity: 70%;
     height: 40px;
     width: 100%;
-    padding-bottom: 5px;
 }
 
 .menu ul li:after {
