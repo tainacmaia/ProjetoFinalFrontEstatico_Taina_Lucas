@@ -18,10 +18,11 @@ header{
 .header-content-box{
     display: flex;
     width: 1010px;
+    margin-top: 60px;
     position: absolute;
     align-self: flex-start;
     /* height: 100%; - quando estiver tudo pronto*/
-    height: 960px;
+    height: 900px;
     border: 5px solid red;
 }
 
@@ -56,7 +57,7 @@ header{
 #banner{
     display: flex;
     position: absolute;
-    margin-top: 455px;
+    margin-top: 405px;
     margin-left: 85px;
 }
 
