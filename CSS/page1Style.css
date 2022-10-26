@@ -40,6 +40,7 @@ body{
     /* background-color: rgba(0, 11, 13); */
     background-image: url('../Imgs/page1/fire-background2.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 .header-box{
@@ -71,6 +72,7 @@ body{
 main{
     background-image: url('../Imgs/page1/Dragonic.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 .main-box{
