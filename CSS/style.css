@@ -67,6 +67,15 @@ header{
     margin-left: 85px;
 }
 
+#header-title{
+    display: flex;
+    position: absolute;
+    margin-top: 760px;
+    margin-left: 240px;
+    color: white;
+    font-size: 44pt;
+}
+
 main{
     background-image: url(../Imgs/ABackgroundMain.jpg);
     width: 100%;
