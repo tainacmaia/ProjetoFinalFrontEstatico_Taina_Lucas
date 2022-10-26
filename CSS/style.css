@@ -75,6 +75,37 @@ main{
     border: 5px solid red;
 }
 
+.main-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 1010px;
+    /* height: 100%; - quando estiver tudo pronto*/
+    height: 1000px;
+    border: 5px solid red;  
+}
+
+.inline-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    border: 5px solid red;
+}
+
+.aside-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    border: 5px solid red;
+}
+
 footer{
     display: flex;
     justify-content: center;
@@ -117,11 +148,12 @@ footer{
 
 .home-nav {
     display: flex;
+    position: absolute;
     justify-content: center;
+    margin: auto;
+    width: 100%;
     background:rgba(0, 11, 13, .6);
     padding: 2px;
-    position: relative;
-    z-index: 499;
 } /*deixa o fundo cinza e opaco*/
 
 .home-nav-inner {
