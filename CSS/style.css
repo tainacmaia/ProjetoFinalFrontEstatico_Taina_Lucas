@@ -27,6 +27,16 @@ header{
     border: 5px solid red;
 }
 
+#game-logo{
+    display: flex;
+    position: relative;
+    margin-top: 180px;
+    width: 30%;
+    height: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .menu{
     display: flex;
     position: absolute;
@@ -68,10 +78,10 @@ header{
 }
 
 #header-title{
-    display: flex;
-    position: relative;
+    display: block;
+    position: absolute; 
+    text-align: center;     
     width: 100%;
-    justify-content: center;
     margin-top: 760px;
     color: white;
     font-size: 44pt;
