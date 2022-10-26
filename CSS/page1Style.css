@@ -1,11 +1,11 @@
-/* remover esse p e h1 depois */
+/* remover esse h1 e p depois */
 h1{
     color: aliceblue;
     font-size: 40pt;
 }
+
 p{
     color: aliceblue;
-    font-size: 30pt;
 }
 
 .menu{
@@ -108,12 +108,12 @@ main{
 
 .end-box{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     width: 1010px;
     height: 200px;
-    border: 5px solid red;
 }
 
 .opacity{
