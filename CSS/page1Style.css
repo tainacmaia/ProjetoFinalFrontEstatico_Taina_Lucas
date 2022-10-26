@@ -1,6 +1,11 @@
-/* remover esse p depois */
+/* remover esse p e h1 depois */
+h1{
+    color: aliceblue;
+    font-size: 40pt;
+}
 p{
     color: aliceblue;
+    font-size: 30pt;
 }
 
 .menu{
@@ -32,32 +37,54 @@ p{
 }
 
 body{
-    background-image: url('../Imgs/page1/Dragonic.jpg');
+    /* background-color: rgba(0, 11, 13); */
+    background-image: url('../Imgs/page1/fire-background2.jpg');
     background-size: cover;
 }
 
 .header-box{
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     width: 1010px;
-    height: 400px;
-    border: 5px solid red;
-    /* margin-top: -45px; */
+    height: 300px;
+    /* border: 5px solid red;  */
+    /* background: url('../Imgs/page1/Dragonic.jpg');
+    background-size: cover; */
+    margin-top: -45px;
+}
+
+.divider-rule{
+    background: url('../Imgs/page1/divider-sprite.png');
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    border: 0;
+    width: 100%;
+    content: "";
+    height: 40px;
+    margin: 0 0 -10px;
+}
+
+main{
+    background-image: url('../Imgs/page1/Dragonic.jpg');
+    background-size: cover;
 }
 
 .main-box{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: auto;
     width: 1010px;
-    height: 700px;
+    /* height: 100%; - quando estiver tudo pronto*/
+    height: 1000px;
     border: 5px solid red;
 }
 
-.inline-box{
+/* .inline-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,9 +92,9 @@ body{
     width: 70%;
     height: 100%;
     border: 5px solid red;
-}
+} */
 
-.aside-box{
+/* .aside-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +102,7 @@ body{
     width: 30%;
     height: 100%;
     border: 5px solid red;
-}
+} */
 
 .end-box{
     display: flex;
@@ -88,6 +115,5 @@ body{
 }
 
 .opacity{
-    background-color: #000B0D;
-    opacity: .6;
+    background-color: rgba(0, 11, 13, .6);    
 }
