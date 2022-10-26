@@ -94,6 +94,7 @@ main{
     background-position: center;
     height: 75%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .main-box{
