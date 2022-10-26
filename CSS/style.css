@@ -1,5 +1,6 @@
 body{
     background-color: #031111;
+    overflow-x: hidden;
 }
 
 header{
@@ -63,7 +64,7 @@ header{
 
 main{
     background-image: url(../Imgs/ABackgroundMain.jpg);
-    margin: 0;
+    width: 100%;
     background-position: center;
     background-repeat:repeat;
     border: 5px solid red;
