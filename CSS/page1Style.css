@@ -36,12 +36,31 @@ p{
     padding-left: 20px;
 }
 
+html, body {
+    height: 100%;
+  }
+
 body{
     /* background-color: rgba(0, 11, 13); */
     background-image: url('../Imgs/page1/fire-background2.jpg');
     background-size: cover;
     background-position: center;
+    /* height: 100%; */
     /* overflow: hidden; */
+}
+
+/* .body-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1010px;
+    height: 100%;
+    border: 5px solid red;
+} */
+
+header{
+    height: 15%;
 }
 
 .header-box{
@@ -50,7 +69,7 @@ body{
     justify-content: center;
     margin: auto;
     width: 1010px;
-    height: 200px;
+    height: 100%;
     /* border: 5px solid red;  */
     /* background: url('../Imgs/page1/Dragonic.jpg');
     background-size: cover; */
@@ -73,7 +92,8 @@ main{
     background-image: url('../Imgs/page1/Dragonic.jpg');
     background-size: cover;
     background-position: center;
-    /* overflow-y: scroll; */
+    height: 75%;
+    overflow-y: scroll;
 }
 
 .main-box{
@@ -83,7 +103,7 @@ main{
     margin: auto;
     width: 1010px;
     /* height: 100%; - quando estiver tudo pronto*/
-    height: 1000px;
+    height: 100%;
     border: 5px solid red;
 }
 
@@ -107,6 +127,10 @@ main{
     border: 5px solid red;
 } */
 
+footer{
+    height: 10%;
+}
+
 .end-box{
     display: flex;
     flex-direction: column;
@@ -114,7 +138,7 @@ main{
     justify-content: center;
     margin: auto;
     width: 1010px;
-    height: 200px;
+    height: 100%;
 }
 
 .opacity{
