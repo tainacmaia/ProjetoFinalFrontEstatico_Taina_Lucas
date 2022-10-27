@@ -98,7 +98,6 @@ main{
 .main-box{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     margin: auto;
     width: 1010px;
     /* height: 100%; - quando estiver tudo pronto*/
@@ -120,6 +119,7 @@ main{
 
 .aside-box{
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -127,6 +127,27 @@ main{
     height: 100%;
     border: 5px solid red;
     color: white;
+}
+
+.login{
+    background: url(../Imgs/loginbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.extra-space{
+    display: flex;
+    justify-content: center; 
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    border: 5px solid red;
 }
 
 footer{
