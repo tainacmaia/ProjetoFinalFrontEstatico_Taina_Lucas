@@ -97,6 +97,20 @@ main{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(29, 16, 2);
+    border-radius: 10px;
+}
+
 .main-box{
     display: flex;
     align-items: flex-start;
