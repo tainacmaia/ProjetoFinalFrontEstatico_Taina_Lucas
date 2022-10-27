@@ -11,7 +11,7 @@ html, body {
 
 body{
     /* background-color: rgba(0, 11, 13); */
-    background-image: url('../Imgs/page1/fire-background2.jpg');
+    background-image: url('../Imgs/heroes/fire-background2.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -68,7 +68,7 @@ header{
 }
 
 .divider-rule{
-    background: url('../Imgs/page1/divider-sprite.png');
+    background: url('../Imgs/heroes/divider-sprite.png');
     position: absolute;
     border: 0;
     width: 100%;
@@ -78,7 +78,7 @@ header{
 }
 
 main{
-    background-image: url('../Imgs/page1/Dragonic.jpg');
+    background-image: url('../Imgs/heroes/Dragonic.jpg');
     background-size: cover;
     background-position: center;
     height: 75%;
@@ -119,7 +119,7 @@ main{
 
 .separator {
     display: flex;
-    background: url(../Imgs/page1/blog-separator-2.png) 50% 100% no-repeat;
+    background: url('../Imgs/heroes/blog-separator-2.png') 50% 100% no-repeat;
     position: relative; 
 }
 
