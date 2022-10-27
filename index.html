@@ -7,65 +7,62 @@
     <title>Gaming Page</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
-
+    <link rel="shortcut icon" href="./Imgs/favicon.ico" type="favicon">
 </head>
 
 <body>
     <header>                   
-        <div id="slider">            
+        <section id="slider">            
             <img class="selected" src="./Imgs/Very_Black_screen.jpg" alt="Image2">
-            <img src="./Imgs/AdventurousGenerousAlbacoretuna-max-1mb.gif" alt="Image3"> 
-            <nav class="menu" id="menuborder">
-                <ul class="menu">
-                    <li class="menu"><a href="">HOME </a></li>
-                    <li class="menu"><a href="">PAGINA 1 </a></li>
-                    <li class="menu"><a href="lucas.html">PAGINA 2 </a></li>
-                    <li class="menu"><a href="">CONTATO </a></li>
-                </ul>
-            </nav>      
-        </div>
+            <img src="./Imgs/AdventurousGenerousAlbacoretuna-max-1mb.gif" alt="Image3">      
+        </section>            
+        <nav class="menu" id="menuborder">
+            <ul class="menu">
+                <li class="menu"><a href="">HOME </a></li>
+                <li class="menu"><a href="./pages/page1.html">PAGINA 1 </a></li>
+                <li class="menu"><a href="lucas.html">PAGINA 2 </a></li>
+                <li class="menu"><a href="">CONTATO </a></li>
+            </ul>
+        </nav> 
+        <section class="header-content-box">
+            <img id="game-logo" src="./Imgs/logo-suggestion2.png" alt="Game Logo">
             <img id="banner" src="./Imgs/banner-image.png" alt="Banner">
+            <h1 id="header-title">Um título grande aqui</h1>
+        </section>
     </header>
 
     <main>
-        <div>
-            <div id="space">
-            <p align="center" style="color:white">Corpo do texto</p>
-            </div>
-            <nav class="home-nav">
-                <div class="home-nav-inner">
-                    <ul class="nav-homemenu">
-                        <li class="indexHome" style="width: 78px;">
-                            <a class="indexHome" href="index.html" title="Home">Home</a>
-                        </li>
-                        <li class="indexPage1" style="width: 78px;">
-                            <a href="indexPage1" title="Page1">Page1</a>
-                        </li>
-                        <li class="indexPage2" style="width: 78px;">
-            
-                            <a href="lucas.html" title="Page2">Page2</a>
-                        </li>
-                        <li class="indexPage3" style="width: 78px;">
-            
-                            <a href="indexPage3" title="Page3">Page3</a>
-                        </li>
-                        <li class="indexPage4" style="width: 78px;">
-            
-                            <a href="indexPage4" title="Page4">Page4</a>
-                        </li>
-                    </ul>
+        <article class="main-box">
+            <section class="inline-box">
+                <p>Teste</p>            
+            </section>
+            <aside class="aside-box">
+                <div class="login"></div>
+                <div class="extra-space">
+                    <p>Aqui pode ter algum texto</p>
                 </div>
-            </nav>
-        </div>
+            </aside>
+        </article>            
+        <nav class="home-nav home-nav-inner">
+                <ul class="nav-homemenu">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="indexPage1" title="Page1">Page1</a></li>
+                <li><a href="indexPage2" title="Page2">Page2</a></li>
+                <li><a href="indexPage3" title="Page3">Page3</a></li>
+                <li><a href="indexPage4" title="Page4">Page4</a></li>
+            </ul>
+        </nav>        
     </main>
 
     <footer>
-        <div>
-            <p align="center" style="color:white">Bye bye.</p>
+        <div class="footer-text">
+            <p>Copyright &copy; 2022. All Rights Reserved.</p>
+            <p>By: Lucas Pereira and Taina Maia</p>
+            <p>Inspiration: GameSiteTemplates.com</p>
         </div>
         <!-- <audio controls repeat autoplay="true">
             <source src="./Audio/Lord of the Rings Main Theme.mp3" type="audio/mpeg">
-          </audio> -->
+        </audio> -->
 
     </footer>
 

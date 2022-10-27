@@ -1,23 +1,54 @@
 body{
-    background-color: #000B0D;
+    background-color: rgba(0, 11, 13);
+    overflow-x: hidden;
 }
 
 header{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     background-image: url('../Imgs/ABackground.jpg');
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     width: 100%;
-    height: 0;
-    padding: 0 0 50%;
+    height: 970px;
+    border: 5px solid red;
+}
+
+.header-content-box{
+    display: flex;
+    width: 1010px;
+    margin-top: 60px;
+    position: absolute;
+    align-self: flex-start;
+    /* height: 100%; - quando estiver tudo pronto*/
+    height: 900px;
+    border: 5px solid red;
+}
+
+#game-logo{
+    display: flex;
+    position: relative;
+    margin-top: 180px;
+    width: 30%;
+    height: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu{
     display: flex;
+    position: absolute;
     list-style-type: none;
     font-size: 20pt;
     justify-content: space-around;
     margin-top: auto;
+}
+
+.menu li{
+    display: flex;
+    position: relative;
 }
 
 .menu a{
@@ -30,7 +61,6 @@ header{
     opacity: 70%;
     height: 40px;
     width: 100%;
-    padding-bottom: 5px;
 }
 
 .menu ul li:after {
@@ -43,25 +73,96 @@ header{
 #banner{
     display: flex;
     position: absolute;
-    top: 0;
-    margin-top: 450px;
-    margin-left: 28%;
+    margin-top: 405px;
+    margin-left: 85px;
+}
+
+#header-title{
+    display: block;
+    position: absolute; 
+    text-align: center;     
+    width: 100%;
+    margin-top: 760px;
+    color: white;
+    font-size: 44pt;
 }
 
 main{
     background-image: url(../Imgs/ABackgroundMain.jpg);
-    margin: 0;
+    width: 100%;
     background-position: center;
     background-repeat:repeat;
+    border: 5px solid red;
+}
+
+.main-box{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    width: 1010px;
+    /* height: 100%; - quando estiver tudo pronto*/
+    /* talvez tenha que adicionar padding */
+    height: 1000px;
+    border: 5px solid red;  
+}
+
+.inline-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    border: 5px solid red;
+    color: white;
+}
+
+.aside-box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    border: 5px solid red;
+    color: white;
+}
+
+.login{
+    background: url(../Imgs/loginbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.extra-space{
+    display: flex;
+    justify-content: center; 
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    border: 5px solid red;
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     background-image: url('../Imgs/Afooter.jpg');
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     width: 100%;
-    padding: 0 0 17%;
+    height: 300px;
+    padding-top: 30px;
+    color: white;
+    border: 5px solid red;
 }
 
 #space {
@@ -90,11 +191,13 @@ footer{
 }
 
 .home-nav {
-    background: #031111;
-    background: rgba(3, 17, 17, 0.8);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background:rgba(0, 11, 13, .6);
     padding: 2px;
-    position: relative;
-    z-index: 499;
 } /*deixa o fundo cinza e opaco*/
 
 .home-nav-inner {
@@ -128,4 +231,13 @@ ul.nav-homemenu li {
     margin: 0;
     padding: 0;
     border: 0;
+    width: 78px;
 } /*deixa os itens lado a lado*/
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-text p{
+    padding-bottom: 5px;
+}
