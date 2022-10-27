@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
 /* remover esse h1 e p depois */
-h1{
+h1, p{
     color: aliceblue;
-    font-size: 40pt;
 }
 
-p{
-    color: aliceblue;
+html, body {
+    height: 100%;
+  }
+
+body{
+    /* background-color: rgba(0, 11, 13); */
+    background-image: url('../Imgs/page1/fire-background2.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 .menu{
@@ -36,29 +45,6 @@ p{
     padding-left: 20px;
 }
 
-html, body {
-    height: 100%;
-  }
-
-body{
-    /* background-color: rgba(0, 11, 13); */
-    background-image: url('../Imgs/page1/fire-background2.jpg');
-    background-size: cover;
-    background-position: center;
-    /* height: 100%; */
-    overflow: hidden;
-}
-
-/* .body-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 1010px;
-    height: 100%;
-    border: 5px solid red;
-} */
-
 header{
     height: 15%;
 }
@@ -71,21 +57,24 @@ header{
     width: 1010px;
     height: 100%;
     /* border: 5px solid red;  */
-    /* background: url('../Imgs/page1/Dragonic.jpg');
-    background-size: cover; */
     margin-top: -45px;
+}
+
+.header-box h1{
+    padding-top: 30px;
+    font-size: 40pt;
+    font-family: 'Cinzel Decorative';
+    font-weight: 700;
 }
 
 .divider-rule{
     background: url('../Imgs/page1/divider-sprite.png');
-    display: flex;
     position: absolute;
-    align-self: flex-end;
     border: 0;
-    width: 101%;
+    width: 100%;
     content: "";
     height: 40px;
-    margin: 0 0 -10px;
+    margin-top: -38px;
 }
 
 main{
@@ -99,14 +88,21 @@ main{
 
 .main-box{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     margin: auto;
+    /* mudar esse padding de acordo com o texto */
+    padding: 5px;
     width: 1010px;
-    /* height: 100%; - quando estiver tudo pronto*/
     height: 100%;
     border: 5px solid red;
 }
+
+.main-box p{
+    font-size: 23pt;
+    line-height: 40px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -121,27 +117,18 @@ main{
     border-radius: 10px;
 }
 
-
-
-/* .inline-box{
+.separator {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 70%;
-    height: 100%;
-    border: 5px solid red;
-} */
+    background: url(../Imgs/page1/blog-separator-2.png) 50% 100% no-repeat;
+    position: relative; 
+}
 
-/* .aside-box{
+.internal-main-box{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 30%;
-    height: 100%;
+    flex-direction: column;
+    width: 100%;    
     border: 5px solid red;
-} */
+}
 
 footer{
     height: 10%;
@@ -153,10 +140,45 @@ footer{
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding-top: 10px;
     width: 1010px;
     height: 100%;
 }
 
 .opacity{
     background-color: rgba(0, 11, 13, .6);    
+}
+
+@media screen and (max-width:1045px){
+    html, body {
+        height: auto;
+    }
+    
+    .main-box, .header-box, .end-box {
+        width: fit-content;
+    }
+
+    .header-box{
+        height: 170px;
+    }
+
+    .header-box h1{
+        font-size: 23pt;
+        text-align: center;
+    }
+
+    .main-box{
+        height: 1000px;
+    }
+
+    .end-box{
+        height: 70px;
+    }
+
+    body{
+        overflow-y: scroll;
+    }
+    main{
+        overflow: hidden;
+    }
 }
