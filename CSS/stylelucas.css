@@ -1,0 +1,104 @@
+body{
+    background-image: url('../Imgs/Tiamat_2560x1600_0.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 0;
+}
+
+
+#space {
+    Width: 100%;
+    height: 100vw;
+}
+
+.home-nav {
+    background: #031111;
+    background: rgba(3, 17, 17, 0.8);
+    padding: 2px;
+    position: relative;
+    z-index: 499;
+} /*deixa o fundo cinza e opaco*/
+
+.home-nav-inner {
+    text-align: center;
+    margin: 0 auto;
+} /*alinha todo o nav no centro*/
+
+ul.nav-homemenu {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 17px;
+    padding-right: 17px;
+} /*alinha os itens do nav com o fundo cinza opaco*/
+
+.nav-homemenu>li>a{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+} /*arruma o texto de cada item do nav*/
+
+ul.nav-homemenu li {
+    position: relative;
+    z-index: 5;
+    display: block;
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+} /*deixa os itens lado a lado*/
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dropbtn {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 10%;
+    height: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: black;
+    min-width: 190px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    font-family: helvetica;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.show {
+    display: flex;
+}
+
+.part2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: auto;
+}
+
+.part1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: auto;
+}

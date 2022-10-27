@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Page</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="./CSS/stylelucas.css">
+
+</head>
+
+<body>
+    <header>                   
+<div class="dropdown">
+            <figure>
+                <div class="part1">
+                    <img class="dropbtn" src="./Imgs/31db461436f44e4726cbc14dc0ea6e53.jpg" alt="menuImg" onclick="myFunction()" tabIndex="0" />
+                        <script>
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+            
+                            window.onclick = function (event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
+                </div>
+                <div class="part2">
+                    <nav id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <li class="menu"><a href="index.html">HOME </a></li>
+                            <li class="menu"><a href="">PAGINA 1 </a></li>
+                            <li class="menu"><a href="lucas.html">PAGINA 2 </a></li>
+                            <li class="menu"><a href="teste.html">CONTATO </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div id="space">
+            <p align="center" style="color:white">Corpo do texto</p>
+            </div>
+            <nav class="home-nav">
+                <div class="home-nav-inner">
+                    <ul class="nav-homemenu">
+                        <li class="indexHome" style="width: 78px;">
+                            <a class="indexHome" href="index.html" title="Home">Home</a>
+                        </li>
+                        <li class="indexPage1" style="width: 78px;">
+                            <a href="indexPage1" title="Page1">Page1</a>
+                        </li>
+                        <li class="indexPage2" style="width: 78px;">
+            
+                            <a href="lucas.html" title="PAGINA 2">PAGINA 2</a>
+                        </li>
+                        <li class="indexPage3" style="width: 78px;">
+            
+                            <a href="teste.html" title="CONTATO">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p align="center" style="color:white">Bye bye.</p>
+        </div>
+        <!-- <audio controls repeat autoplay="true">
+            <source src="./Audio/Lord of the Rings Main Theme.mp3" type="audio/mpeg">
+          </audio> -->
+
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
