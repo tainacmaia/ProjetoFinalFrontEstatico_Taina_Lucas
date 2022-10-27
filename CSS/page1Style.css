@@ -82,7 +82,7 @@ header{
     position: absolute;
     align-self: flex-end;
     border: 0;
-    width: 100%;
+    width: 101%;
     content: "";
     height: 40px;
     margin: 0 0 -10px;
@@ -97,6 +97,16 @@ main{
     overflow-x: hidden;
 }
 
+.main-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 1010px;
+    /* height: 100%; - quando estiver tudo pronto*/
+    height: 100%;
+    border: 5px solid red;
+}
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -111,16 +121,7 @@ main{
     border-radius: 10px;
 }
 
-.main-box{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: auto;
-    width: 1010px;
-    /* height: 100%; - quando estiver tudo pronto*/
-    height: 100%;
-    border: 5px solid red;
-}
+
 
 /* .inline-box{
     display: flex;
