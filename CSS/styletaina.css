@@ -240,7 +240,7 @@ main{
     display: flex;
     position: relative;
     align-items: center;
-    width: 70%;  
+    width: 65%;  
     height: 100%;  
     border: 5px solid red;
     justify-content: center;
@@ -250,7 +250,7 @@ main{
     display: flex;
     position: relative;
     align-items: center;
-    width: 30%;  
+    width: 35%;  
     height: 100%;  
     border: 5px solid red;
     justify-content: center;
@@ -260,7 +260,7 @@ main{
 .content{
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -309,9 +309,10 @@ input{
 
 .hero img{
     padding: 10px;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: auto;
+    border-radius: 30px;
 }
 
 #hero1:checked ~ .s1{
@@ -386,7 +387,6 @@ input{
 
     .header-box{
         padding-top: 5px;
-        height: 140px;
     }
 
     .header-box h1{
