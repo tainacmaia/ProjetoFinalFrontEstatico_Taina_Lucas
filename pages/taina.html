@@ -10,18 +10,26 @@
 </head>
 <body>
     <header>
-        <nav class="menu" id="menuborder">
-            <ul class="menu">
-                <li class="menu"><a href="../index.html">HOME </a></li>
-                <li class="menu"><a href="./taina.html">HERÓIS </a></li>
-                <li class="menu"><a href="./lucas.html">VILÕES </a></li>
-                <li class="menu"><a href="./contato.html">CONTATO </a></li>
-            </ul>
+        <nav class="menu">
+            <div class="center-box">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>     
+                <ul class="hidden">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./taina.html">HERÓIS</a></li>
+                <li><a href="./lucas.html">VILÕES</a></li>
+                <li><a href="./contato.html">CONTATO</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="header-box ">
             <h1>HERÓIS</h1>       
         </section>            
-        <hr class="divider-rule">    
+        <hr class="divider-rule" id="first-divider">    
     </header>          
     <main>
         <article class="main-box opacity">
@@ -66,13 +74,7 @@
                 <p>Mais coisa escrita aqui</p>
             </section>
         </article>        
-        <hr class="divider-rule">
-        <!-- <article class="inline-box">
-            <p>Teste</p>            
-        </article> -->
-        <!-- <aside class="aside-box">
-            <p>Esse vai pro lado</p>
-        </aside> -->
+        <hr class="divider-rule" id="second-divider">
     </main>
     <footer>
         <section class="end-box">

@@ -18,7 +18,7 @@ body{
     overflow: hidden;
 }
 
-.menu{
+/* .menu{
     display: flex;
     list-style-type: none;
     font-size: 20pt;
@@ -44,7 +44,100 @@ body{
     background: url('../Imgs/Amenuseparator.png') center no-repeat;
     vertical-align: middle;
     padding-left: 20px;
+} */
+
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0px 70px 0px;
+  }
+  
+.center-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 230px;
 }
+
+  #checkbox-menu{
+    display: flex;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    /* altura dos itens do menu */
+    height: 40px;
+    width: 50px;
+  }
+  
+  label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #b97f12;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+  
+  #checkbox-menu:checked ~ .hidden{
+    opacity: 1;
+    transition: .5s;
+  }
+  
+  .hidden{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25pt;
+    opacity: 0;
+    background-color: rgb(0, 0, 0, .9);
+    color:white;
+    width: 180px;
+    padding: 10px;
+    font-family: 'Palatino';
+  }
+
+  .hidden a{
+    color: white;
+    text-decoration: none;
+  }
 
 header{
     height: 15%;
@@ -52,30 +145,37 @@ header{
 
 .header-box{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    margin: auto;
     width: 1010px;
     height: 100%;
-    /* border: 5px solid red;  */
-    margin-top: -45px;
+    border: 5px solid red; 
+    margin: -140px auto;
 }
 
 .header-box h1{
-    padding-top: 30px;
     font-size: 40pt;
     font-family: 'Cinzel Decorative';
     font-weight: 700;
 }
 
 .divider-rule{
+    display: flex;
     background: url('../Imgs/heroes/divider-sprite.png');
-    position: absolute;
     border: 0;
     width: 100%;
     content: "";
     height: 40px;
-    margin-top: -38px;
+}
+
+#first-divider{
+    margin-top: 90px;
+}
+
+#second-divider{
+    position: absolute;
+    margin-top: -50px;
 }
 
 main{
@@ -123,7 +223,7 @@ main{
 .separator {
     display: flex;
     background: url('../Imgs/heroes/blog-separator-2.png') 50% 100% no-repeat;
-    position: relative; 
+    border: 5px solid red;
 }
 
 .internal-main-box{
@@ -225,14 +325,16 @@ footer{
 @media screen and (max-width:1045px){
     html, body {
         height: auto;
+        width: 100%;
     }
     
     .main-box, .header-box, .end-box {
-        width: fit-content;
+        width: 100%;
     }
 
     .header-box{
-        height: 170px;
+        padding-top: 5px;
+        height: 140px;
     }
 
     .header-box h1{
@@ -240,8 +342,26 @@ footer{
         text-align: center;
     }
 
+    header{
+        height: 110px;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
     .main-box{
-        height: 1000px;
+        /* ver essa altura depois */
+        height: 2000px;
+    }
+
+    .internal-main-box{
+        height: 300px;
+        width: fit-content;
+    }
+
+    .main-box p{
+        font-size: 14pt;
     }
 
     .end-box{
