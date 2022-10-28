@@ -363,8 +363,15 @@ input{
     /* height: fit-content;  */
 }
 
-@media screen and (max-height:925px){
+@media screen and (max-width:600px){
+    .menu{
+        margin: -150px 20px;
+    }
 
+    .hidden{
+        font-size: 12pt;
+        width: 100px;
+    }
 }
 
 @media screen and (max-width:1045px){
@@ -389,9 +396,7 @@ input{
     }
 
     .menu{
-        justify-content: center;
-        margin-left: -30px;
-        margin-right: auto;
+        margin-top: -150px;
     }
 
     main{
