@@ -48,19 +48,15 @@ body{
 
 .menu{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0px 70px 0px;
+    position: absolute;
+    margin: -130px 70px 0px;
   }
   
 .center-box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 230px;
+    margin-top: 50px;
 }
 
   #checkbox-menu{
@@ -127,11 +123,12 @@ body{
     text-align: center;
     font-size: 25pt;
     opacity: 0;
-    background-color: rgb(0, 0, 0, .9);
+    background-color: rgb(0, 0, 0);
     color:white;
     width: 180px;
     padding: 10px;
     font-family: 'Palatino';
+    z-index: 2;
   }
 
   .hidden a{
@@ -140,18 +137,19 @@ body{
   }
 
 header{
-    height: 15%;
+    height: 130px;
 }
 
 .header-box{
     display: flex;
     position: relative;
+    align-self: center;
     align-items: center;
     justify-content: center;
     width: 1010px;
     height: 100%;
     border: 5px solid red; 
-    margin: -140px auto;
+    margin: auto;
 }
 
 .header-box h1{
@@ -162,20 +160,22 @@ header{
 
 .divider-rule{
     display: flex;
+    position: relative;
     background: url('../Imgs/heroes/divider-sprite.png');
     border: 0;
     width: 100%;
     content: "";
     height: 40px;
+    margin: auto;
+    z-index: 1;
 }
 
 #first-divider{
-    margin-top: 90px;
+    margin-top: -30px;
 }
 
 #second-divider{
-    position: absolute;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
 main{
@@ -194,9 +194,9 @@ main{
     text-align: center;
     margin: auto;
     /* mudar esse padding de acordo com o texto */
-    padding: 5px;
+    padding: 20px 5px;
     width: 1010px;
-    height: 100%;
+    height: fit-content;
     border: 5px solid red;
 }
 
@@ -228,9 +228,32 @@ main{
 
 .internal-main-box{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
     width: 100%;    
     border: 5px solid red;
+}
+
+.internal-main-box-division{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 70%;  
+    height: 100%;  
+    border: 5px solid red;
+    justify-content: center;
+}
+
+.carrossel-image{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 30%;  
+    height: 100%;  
+    border: 5px solid red;
+    justify-content: center;
 }
 
 /* talvez não precise desse content */
@@ -272,15 +295,23 @@ input{
 }
 
 .carrossel{
-    display: flex;    
+    display: flex;      
     width: 500%;
     height: 90%;
     border: 5px solid red;
 }
 
 .hero{
+    display: flex;
     width: 20%;    
     transition: .6s;
+}
+
+.hero img{
+    padding: 10px;
+    height: 250px;
+    width: 250px;
+    margin: auto;
 }
 
 #hero1:checked ~ .s1{
@@ -303,9 +334,18 @@ input{
     margin-left: -80%;
 }
 
-footer{
-    height: 10%;
+#heroes-city{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    margin: 10px;
+    border-radius: 20px;
 }
+
+/* footer{
+    height: 100px;
+} */
+
 
 .end-box{
     display: flex;
@@ -319,7 +359,12 @@ footer{
 }
 
 .opacity{
-    background-color: rgba(0, 11, 13, .6);    
+    background-color: rgba(0, 11, 13, .6);
+    /* height: fit-content;  */
+}
+
+@media screen and (max-height:925px){
+
 }
 
 @media screen and (max-width:1045px){
@@ -340,19 +385,17 @@ footer{
     .header-box h1{
         font-size: 23pt;
         text-align: center;
-    }
-
-    header{
-        height: 110px;
+        margin-bottom: 30px;
     }
 
     .menu{
         justify-content: center;
+        margin-left: -30px;
+        margin-right: auto;
     }
 
-    .main-box{
-        /* ver essa altura depois */
-        height: 2000px;
+    main{
+        height: 100%;
     }
 
     .internal-main-box{
