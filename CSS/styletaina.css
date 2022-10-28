@@ -413,9 +413,9 @@ input{
         width: fit-content;
     }
 
-    .main-box p{
+    /* .main-box p{
         font-size: 14pt;
-    }
+    } */
 
     .end-box{
         height: 70px;

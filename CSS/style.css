@@ -175,6 +175,7 @@ footer{
     height: 100vw;
     max-height: 5000px;
     position: relative;
+    z-index: 1;
 }
 
 #slider img{
