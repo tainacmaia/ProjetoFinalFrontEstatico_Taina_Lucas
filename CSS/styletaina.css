@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/0e4522fb38c3b796270a852c5e6c0fb2?family=Palatino');
 
 /* remover esse h1 e p depois */
 h1, p{
@@ -89,6 +90,7 @@ main{
 .main-box{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: auto;
     /* mudar esse padding de acordo com o texto */
@@ -99,8 +101,9 @@ main{
 }
 
 .main-box p{
-    font-size: 23pt;
+    font-size: 18pt;
     line-height: 40px;
+    font-family: 'Palatino';
 }
 
 ::-webkit-scrollbar {
@@ -128,6 +131,76 @@ main{
     flex-direction: column;
     width: 100%;    
     border: 5px solid red;
+}
+
+/* talvez não precise desse content */
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-navigation{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .7);
+    align-items: center;
+    flex-direction: row;
+    height: 20px;
+}
+
+.bar{
+    width: 90px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.carrossel{
+    display: flex;    
+    width: 500%;
+    height: 90%;
+    border: 5px solid red;
+}
+
+.hero{
+    width: 20%;    
+    transition: .6s;
+}
+
+#hero1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#hero2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#hero3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#hero4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#hero5:checked ~ .s1{
+    margin-left: -80%;
 }
 
 footer{
