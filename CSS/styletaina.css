@@ -205,10 +205,6 @@ main{
 
 }
 
-#border{
-    border: 5px solid rgb(0, 0, 0, .7);  
-}
-
 .carrossel-image{
     display: flex;
     position: relative;
@@ -216,6 +212,10 @@ main{
     width: 35%;  
     height: 100%;  
     justify-content: center;
+}
+
+#border{
+    border: 5px solid rgb(0, 0, 0, .7);  
 }
 
 .content{

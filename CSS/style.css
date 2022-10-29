@@ -109,13 +109,43 @@ main{
 
 .inline-box{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     margin: auto;
     width: 70%;
     height: 100%;
     border: 5px solid red;
     color: white;
+}
+
+.internal-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 30%;  
+    border: 5px solid red;
+}
+
+.internal-box-division{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 65%;  
+    height: 100%;  
+    justify-content: center;
+    border: 5px solid red;
+}
+
+.internal-box-image{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35%;  
+    height: 100%;  
+    justify-content: center;
+    border: 5px solid red;
 }
 
 .aside-box{
