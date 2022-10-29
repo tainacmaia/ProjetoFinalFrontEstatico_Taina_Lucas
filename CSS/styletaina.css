@@ -18,37 +18,8 @@ body{
     /* background-color: rgba(0, 11, 13); */
     background-image: url('../Imgs/heroes/fire-background2.jpg');
     background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
-
-/* .menu{
-    display: flex;
-    list-style-type: none;
-    font-size: 20pt;
-    justify-content: space-around;
-    margin-top: auto;
-}
-
-.menu a{
-    color: steelblue;
-    text-decoration: none;
-}
-
-#menuborder{
-    background-color: black;
-    opacity: 70%;
-    height: 40px;
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.menu ul li:after {
-    content: '';
-    background: url('../Imgs/Amenuseparator.png') center no-repeat;
-    vertical-align: middle;
-    padding-left: 20px;
-} */
 
 .menu{
     height: 100%;
@@ -196,7 +167,6 @@ main{
     align-items: center;
     text-align: center;
     margin: auto;
-    /* mudar esse padding de acordo com o texto */
     padding: 20px 5px;
     width: 1010px;
     height: fit-content;
@@ -433,6 +403,7 @@ input{
         overflow-y: scroll;
     }
     main{
-        overflow: hidden;
+        /* scroll lateral com uma sombra se não botar*/
+        /* overflow: hidden; */
     }
 }
