@@ -151,7 +151,7 @@ header{
     justify-content: center;
     width: 1010px;
     height: 100%;
-    border: 5px solid red; 
+    /* border: 5px solid red;  */
     margin: auto;
 }
 
@@ -227,15 +227,16 @@ main{
 
 .separator {
     display: flex;
+    width: 100%;
     background: url('../Imgs/heroes/blog-separator-2.png') 50% 100% no-repeat;
     border: 5px solid red;
 }
 
 .internal-main-box{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     position: relative;
     width: 100%;    
     border: 5px solid red;
@@ -265,7 +266,7 @@ main{
 .content{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -348,11 +349,6 @@ input{
     border-radius: 20px;
 }
 
-/* footer{
-    height: 100px;
-} */
-
-
 .end-box{
     display: flex;
     flex-direction: column;
@@ -371,7 +367,7 @@ input{
 
 @media screen and (max-width:600px){
     .menu{
-        margin: -150px 20px;
+        margin: -160px 10px;
     }
 
     .hidden{
@@ -404,18 +400,30 @@ input{
         margin-top: -150px;
     }
 
+    .center-box{
+        margin-top: 60px;
+    }
+
     main{
         height: 100%;
+        padding: 20px;
     }
 
-    .internal-main-box{
-        height: 300px;
-        width: fit-content;
+    .hero{
+        flex-direction: column;
     }
 
-    /* .main-box p{
-        font-size: 14pt;
-    } */
+    .internal-main-box-division{
+        width: 100%;
+    }
+
+    .carrossel-image{
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        border-radius: 30px;
+    }
 
     .end-box{
         height: 70px;
