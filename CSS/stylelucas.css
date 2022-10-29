@@ -1,5 +1,5 @@
 body{
-    background-image: url('../Imgs/Tiamat_2560x1600_0.jpeg');
+    background-image: url('../Imgs/Villains/Tiamat_2560x1600_0.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,7 +7,9 @@ body{
 
 header{
     width: 100%;
-    height: 0;
+    height: 100%;
+    border: 2px solid blue;
+    position: fixed;
 }
 
 
@@ -61,6 +63,7 @@ ul.nav-homemenu li {
     display: flex;
     flex-direction: column;
     position: relative;
+    border: 2px solid red;
 }
 
 .dropbtn {
@@ -101,4 +104,58 @@ ul.nav-homemenu li {
     display: flex;
     justify-content: flex-end;
     padding-right: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+    border: 2px solid red;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-text p{
+    padding-bottom: 5px;
+}
+
+.title{
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+    border: 5px solid green;
+}
+
+img.animated-gif{
+    display: flex;
+    justify-content:center;
+    width: 1500px;
+    height: auto;
+    border: 5px solid yellow;
+  }
+
+  #slider {
+    display:flex;
+    width: 100%;
+    max-width: 5000px;
+    height: 100vw;
+    max-height: 5000px;
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+}
+
+#slider img.selected { 
+    opacity: 1;
 }
