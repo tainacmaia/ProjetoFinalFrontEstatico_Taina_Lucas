@@ -1,80 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
-
-/* remover esse h1 e p depois */
-h1, p{
-    color: aliceblue;
-}
+@import url('//db.onlinewebfonts.com/c/0e4522fb38c3b796270a852c5e6c0fb2?family=Palatino');
+/* @import url('http://fonts.cdnfonts.com/css/cardinal'); */
+/* @import url('//db.onlinewebfonts.com/c/385b2e844755c43a7bf26dbc7de55fd2?family=Augusta'); */
+@import url('http://fonts.cdnfonts.com/css/black-chancery');
+/* @import url('http://fonts.cdnfonts.com/css/moria-citadel'); */
 
 html, body {
     height: 100%;
   }
 
 body{
-    /* background-color: rgba(0, 11, 13); */
     background-image: url('../Imgs/heroes/fire-background2.jpg');
     background-size: cover;
-    background-position: center;
     overflow: hidden;
+    color: antiquewhite;
 }
 
 .menu{
+    height: 100%;
+    position: absolute;
+    margin: -130px 70px 0px;
+  }
+  
+.center-box{
     display: flex;
-    list-style-type: none;
-    font-size: 20pt;
-    justify-content: space-around;
-    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.menu a{
-    color: steelblue;
-    text-decoration: none;
-}
-
-#menuborder{
-    background-color: black;
-    opacity: 70%;
+  #checkbox-menu{
+    display: flex;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
     height: 40px;
+    width: 50px;
+  }
+  
+  label span{
+    position: absolute;
+    display: block;
+    height: 5px;
     width: 100%;
-    padding-bottom: 5px;
-}
+    border-radius: 30px;
+    background: #b97f12;
+    transition: 0.25s ease-in-out;
+  }
+  
+  label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+  
+  #checkbox-menu:checked ~ .hidden{
+    opacity: 1;
+    transition: .5s;
+  }
+  
+  .hidden{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25pt;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    width: 180px;
+    padding: 10px;
+    font-family: 'Palatino';
+    z-index: 2;
+  }
 
-.menu ul li:after {
-    content: '';
-    background: url('../Imgs/Amenuseparator.png') center no-repeat;
-    vertical-align: middle;
-    padding-left: 20px;
-}
+  .hidden a{
+    color: antiquewhite;
+    text-decoration: none;
+  }
 
 header{
-    height: 15%;
+    height: 130px;
 }
 
 .header-box{
     display: flex;
+    position: relative;
+    align-self: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
     width: 1010px;
     height: 100%;
-    /* border: 5px solid red;  */
-    margin-top: -45px;
+    margin: auto;
 }
 
 .header-box h1{
-    padding-top: 30px;
     font-size: 40pt;
     font-family: 'Cinzel Decorative';
     font-weight: 700;
 }
 
 .divider-rule{
+    display: flex;
+    position: relative;
     background: url('../Imgs/heroes/divider-sprite.png');
-    position: absolute;
     border: 0;
     width: 100%;
     content: "";
     height: 40px;
-    margin-top: -38px;
+    margin: auto;
+    z-index: 1;
+    margin-top: -30px;
 }
 
 main{
@@ -89,18 +150,18 @@ main{
 .main-box{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: auto;
-    /* mudar esse padding de acordo com o texto */
-    padding: 5px;
+    padding: 20px 5px;
     width: 1010px;
-    height: 100%;
-    border: 5px solid red;
+    height: fit-content;
 }
 
 .main-box p{
-    font-size: 23pt;
+    font-size: 20pt;
     line-height: 40px;
+    font-family: 'BlackChancery';
 }
 
 ::-webkit-scrollbar {
@@ -119,19 +180,120 @@ main{
 
 .separator {
     display: flex;
+    width: 100%;
     background: url('../Imgs/heroes/blog-separator-2.png') 50% 100% no-repeat;
-    position: relative; 
 }
 
 .internal-main-box{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 100%;    
-    border: 5px solid red;
 }
 
-footer{
-    height: 10%;
+.carrossel-division{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 65%;  
+    height: 100%;  
+    justify-content: center;
+}
+
+.carrossel-image{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35%;  
+    height: 100%;  
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-navigation{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .7);
+    align-items: center;
+    flex-direction: row;
+    height: 20px;
+}
+
+.bar{
+    width: 90px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.carrossel{
+    display: flex;      
+    width: 500%;
+    height: 90%;
+}
+
+.hero{
+    display: flex;
+    width: 20%;    
+    transition: .6s;
+}
+
+.hero img{
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#hero1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#hero2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#hero3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#hero4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#hero5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+#heroes-city{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 .end-box{
@@ -143,42 +305,99 @@ footer{
     padding-top: 10px;
     width: 1010px;
     height: 100%;
+    font-family: 'Palatino';
+    line-height: 25px;
+}
+
+.back-top{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Palatino';
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.back-top a{
+   color: antiquewhite; 
+   text-decoration: none;
 }
 
 .opacity{
-    background-color: rgba(0, 11, 13, .6);    
+    background-color: rgba(0, 11, 13, .8);
+}
+
+@media screen and (max-width:600px){
+    .menu{
+        margin: -160px 10px;
+    }
+
+    .hidden{
+        font-size: 12pt;
+        width: 100px;
+    }
+
+    .main-box p{
+        font-size: 15pt;
+        line-height: 20px;
+    }
 }
 
 @media screen and (max-width:1045px){
     html, body {
         height: auto;
+        width: 100%;
     }
     
     .main-box, .header-box, .end-box {
-        width: fit-content;
+        width: 100%;
     }
 
     .header-box{
-        height: 170px;
+        padding-top: 5px;
     }
 
     .header-box h1{
         font-size: 23pt;
         text-align: center;
+        margin-bottom: 30px;
     }
 
-    .main-box{
-        height: 1000px;
+    .menu{
+        margin-top: -150px;
+    }
+
+    .center-box{
+        margin-top: 60px;
+    }
+
+    main{
+        height: 100%;
+        padding: 20px;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrossel-division{
+        width: 100%;
+    }
+
+    .carrossel-image{
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        border-radius: 30px;
     }
 
     .end-box{
-        height: 70px;
+        margin-top: -10px;
+        height: 100px;
     }
 
     body{
         overflow-y: scroll;
-    }
-    main{
-        overflow: hidden;
     }
 }
