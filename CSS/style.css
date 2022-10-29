@@ -44,6 +44,7 @@ header{
     font-size: 20pt;
     justify-content: space-around;
     margin-top: auto;
+    z-index: 1;
 }
 
 .menu li{
@@ -175,7 +176,6 @@ footer{
     height: 100vw;
     max-height: 5000px;
     position: relative;
-    z-index: 1;
 }
 
 #slider img{
@@ -189,6 +189,7 @@ footer{
 
 #slider img.selected { 
     opacity: 1;
+    z-index: 2;
 }
 
 .home-nav {
