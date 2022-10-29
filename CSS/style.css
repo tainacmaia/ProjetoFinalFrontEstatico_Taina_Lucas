@@ -32,7 +32,7 @@ header{
     position: relative;
     margin-top: 180px;
     width: 300px;
-    height: 20%;
+    height: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -350,11 +350,12 @@ ul.nav-homemenu li {
 }
 
 @media screen and (max-width:600px){
-
+    
     #header-title{
-        margin-top: 450px;
+        margin-top: 460px;
         font-size: 38pt;
     }
+
 
     #banner{
         margin-top: -50px;
@@ -393,13 +394,13 @@ ul.nav-homemenu li {
         cursor: pointer;
         position: relative;
         display: flex;
-        height: 40px;
+        height: 50px;
         width: 75px;
       }
       
       label span{
         position: absolute;
-        margin: 10px;
+        margin: 15px 11px;
         display: block;
         height: 5px;
         width: 70%;
