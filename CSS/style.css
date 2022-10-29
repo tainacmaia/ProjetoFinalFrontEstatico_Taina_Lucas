@@ -10,7 +10,7 @@ header{
     background-image: url('../Imgs/ABackground.jpg');
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     width: 100%;
     height: 970px;
     border: 5px solid red;
@@ -18,12 +18,12 @@ header{
 
 .header-content-box{
     display: flex;
+    flex-direction: column;
     width: 1010px;
     margin-top: 60px;
     position: absolute;
     align-self: flex-start;
-    /* height: 100%; - quando estiver tudo pronto*/
-    height: 900px;
+    height: 100%;
     border: 5px solid red;
 }
 
@@ -31,7 +31,7 @@ header{
     display: flex;
     position: relative;
     margin-top: 180px;
-    width: 30%;
+    width: 300px;
     height: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -73,14 +73,16 @@ header{
 
 #banner{
     display: flex;
-    position: absolute;
-    margin-top: 405px;
-    margin-left: 85px;
+    margin-top: 50px;
+    margin-left: 90px;
+    height: 287px;
+    width: 564px;
 }
 
 #header-title{
-    display: block;
+    display: flex;
     position: absolute; 
+    justify-content: center;
     text-align: center;     
     width: 100%;
     margin-top: 760px;
@@ -101,7 +103,7 @@ main{
     align-items: flex-start;
     margin: auto;
     width: 1010px;
-    /* height: 100%; - quando estiver tudo pronto*/
+    height: 100%;
     /* talvez tenha que adicionar padding */
     height: 1000px;
     border: 5px solid red;  
@@ -272,4 +274,91 @@ ul.nav-homemenu li {
 
 .footer-text p{
     padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1045px) {
+
+    html, body {
+        height: auto;
+        width: 100%;
+    }
+    
+    .main-box, .header-box, .header-content-box, .end-box {
+        width: 100%;
+    }
+
+    header{
+        height: 700px;
+    }
+
+    .header-box{
+        margin: auto;
+        align-items: center;
+    }
+
+    #header-title{
+        margin-top: 500px;
+    }
+
+    #banner{
+        margin-top: -90px;
+        margin-left: 0px;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        height: 207px;
+        width: 484px;
+    }
+
+    .main-box{
+        flex-direction: column;
+    }
+
+    .internal-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inline-box{
+        width: 100%;  
+    }
+
+    .aside-box{
+        width: 100%;  
+    }
+
+    .internal-box-division{
+        width: 100%;  
+    }
+    
+    .internal-box-image{
+        width: 100%;  
+    }
+
+    .login{
+        height: 100%;
+    }
+    
+    .extra-space{
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    #header-title{
+        margin-top: 450px;
+        font-size: 38pt;
+    }
+
+    #banner{
+        margin-top: -50px;
+        height: 137px;
+        width: 304px;
+    }
+
+    .menu{
+        display: none;
+    }
 }
