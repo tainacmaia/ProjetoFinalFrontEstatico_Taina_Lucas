@@ -11,29 +11,13 @@
 </head>
 
 <body>
-    <header>                   
+    <button class="boss">Vilao 1</button>
+    <button class="boss">Vilao 2</button>
+    <header>                  
         <div class="dropdown">
             <figure>
                 <div class="part1">
                     <img class="dropbtn" src="../Imgs/Villains/31db461436f44e4726cbc14dc0ea6e53.jpg" alt="menuImg" onclick="myFunction()" tabIndex="0" />
-                        <script>
-                            function myFunction() {
-                                document.getElementById("myDropdown").classList.toggle("show");
-                            }
-            
-                            window.onclick = function (event) {
-                                if (!event.target.matches('.dropbtn')) {
-                                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                                    var i;
-                                    for (i = 0; i < dropdowns.length; i++) {
-                                        var openDropdown = dropdowns[i];
-                                        if (openDropdown.classList.contains('show')) {
-                                            openDropdown.classList.remove('show');
-                                        }
-                                    }
-                                }
-                            }
-                        </script>
                 </div>
                 <div class="part2">
                     <nav id="myDropdown" class="dropdown-content">
@@ -56,10 +40,10 @@
                     <img src="../Imgs/Villains/titleG.gif" alt="title">
                 </div>
                 <div>
-                    <section id="slider">            
-                        <img class="selected" src="../Imgs/Villains/perfstartGIF.gif" alt="gif1">
+                    <section id="oldscroll">
+                        <!-- <img class="selected" src="../Imgs/Villains/perfstartGIF.gif" alt="gif1">
                         <img src="../Imgs/Villains/perfmidGIF.gif" alt="gif2">
-                        <img src="../Imgs/Villains/perfendGIF.gif" alt="gif3">      
+                        <img src="../Imgs/Villains/perfendGIF.gif" alt="gif3">       -->
                     </section>
                     <script src="../JS/scriptlucas.js"></script>
                 </div>
@@ -89,10 +73,9 @@
 
     </footer>
 
-    <script src="../JS/script.js"></script>
+    <!-- <script src="../JS/script.js"></script> -->
+    <script scr="../JS/scriptmenu.js" defer="defer"></script>
 </body>
 
 </html>
 
-<!-- 
-https://royaltyfreefootages.com/video/old-paper-texture-background-hd--old-paper-background-video--old-paper-effect-video--vintage-look-1 -->

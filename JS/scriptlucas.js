@@ -1,30 +1,36 @@
-let time = 1000,
-    currentImageIndex = 0,
-    images = document
-                .querySelectorAll("#slider img")
-    max = images.length;
+let gifcontent = document.querySelector("#oldscroll");
+let gifstart = document.createElement("IMG");
 
-function nextImage() {
-    images.add(".//../Imgs/Villains/perfstartGIF.gif")
-    time = 5000,
-    images.remove(".//../Imgs/Villains/perfstartGIF.gif")
-    images.add("../Imgs/Villains/perfmidGIF.gif")
-    if(currentImageIndex >= max)
-    currentImageIndex = 0*/   /*aqui é onde faz ficar o loopinfinito*/
-    images.remove("../Imgs/Villains/perfmidGIF.gif")
-    images.add("../Imgs/Villains/perfendGIF.gif")
-    time = 4000,
-    images.remove("../Imgs/Villains/perfendGIF.gif")
+gifstart.width = 1200;
+
+var buttons = document.querySelectorAll(".boss");
+
+buttons.forEach((button)=>{
+    button.addEventListener("click",()=>{
+        if(gifcontent.classList.contains("aberto")){
+            gifstart.src = "../Imgs/Villains/perfendGIF.gif"
+        setTimeout(()=>{
+            gifstart.src = "../Imgs/Villains/perfstartGIF.gif"
+            setTimeout(()=>{
+                gifstart.src = "../Imgs/Villains/perfmidGIF.gif"
+            },5000)
+        },5000)
+
+        }
+        else{
+            gifcontent.classList.add("aberto")
+            addgif();
+            setTimeout(()=>{
+                gifstart.src = "../Imgs/Villains/perfmidGIF.gif"
+            },5000)
+        }
+    });
+})
+
+function addgif(){
+    gifstart.src = "../Imgs/Villains/perfstartGIF.gif";
+    gifcontent.appendChild(gifstart);
 }
-
-function start() {
-    setInterval(() => {
-        // troca de imagem
-        nextImage()
-    }, time)   
-}
-
-window.addEventListener("click", start)
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -40,5 +46,8 @@ window.onclick = function (event) {
                 openDropdown.classList.remove('show');
             }
         }
+        // setTimeout(()=>{
+        //     gifstart.src = "../Imgs/Villains/perfmidGIF.gif"
+        // },5000)
     }
 }

@@ -138,10 +138,33 @@ main{
     display: flex;
     position: relative;
     align-items: center;
+    flex-direction: column;
     width: 65%;  
     height: 100%;  
     justify-content: center;
     border: 5px solid red;
+}
+
+.internal-box-division>div>h1{
+    color: #62E4E0;
+    margin: 10px 0 0;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+
+.readmore{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    position: relative;
+    text-align: center;
+    color: #D5D4D9;
+    overflow: visible;
+    cursor: pointer;
+    line-height: 27px;
+    box-sizing: content-box;
+    background: #126966;
+    background: linear-gradient(to bottom, #0F5755 0, #1B9D99 20%, #126966 50%, #0A3D3B 80%, #0E5351 100%) no-repeat;
 }
 
 .internal-box-image{
@@ -217,10 +240,6 @@ main{
     margin: 0 auto;
 }
 
-#rememberme{
-    
-}
-
 .login>form>div>button{
     text-decoration: none;
     font-size: 14px;
@@ -234,19 +253,6 @@ main{
     box-sizing: content-box;
     background: #126966;
     background: linear-gradient(to bottom, #0F5755 0, #1B9D99 20%, #126966 50%, #0A3D3B 80%, #0E5351 100%) no-repeat;
-}
-
-.login>form>div>a {
-    border: 5px solid blue;
-    /* content: url(images/blockbullets.png);
-    margin-right: 6px;
-    bottom: 2px;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    line-height: 0;
-    margin-left: -19px; */
 }
 
 .extra-space{
