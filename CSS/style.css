@@ -115,6 +115,7 @@ main{
 
 .inline-box{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: auto;
     width: 70%;
@@ -185,13 +186,27 @@ main{
     border: 5px solid red;
 }
 
-.internal-box-image>img{
-    max-width: 100%;
-    max-height: auto;
+#ib1{
+    background: url('../Imgs/Io.jpg')  no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ib2{
+    background: url('../Imgs/sidemapslight.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ib3{
+    background: url('../Imgs/battle.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .aside-box{
     display: flex;
+    position: relative;
     flex-flow: column;
     align-items: center;
     justify-content: center;
@@ -201,6 +216,11 @@ main{
     border: 5px solid red;
     color: white;
 }
+
+form{
+    padding-left: 20px;
+}
+
 
 .login{
     background: url(../Imgs/loginbg.jpg);
@@ -263,8 +283,18 @@ main{
     background: linear-gradient(to bottom, #0F5755 0, #1B9D99 20%, #126966 50%, #0A3D3B 80%, #0E5351 100%) no-repeat;
 }
 
+.reme{
+    display: flex;
+}
+
+#rememberme{
+    height: auto;
+    width: auto;
+}
+
 .extra-space{
     display: flex;
+    position: relative;
     justify-content: center; 
     flex-direction:column;
     text-align: center;
@@ -369,12 +399,14 @@ ul.nav-homemenu li {
 @media screen and (max-width: 1045px) {
 
     html, body {
+        word-wrap:break-word;
         height: auto;
         width: 100%;
     }
     
     .main-box, .header-box, .header-content-box, .end-box {
         width: 100%;
+        height: 100%;
     }
 
     header{
@@ -407,6 +439,7 @@ ul.nav-homemenu li {
     .internal-box{
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     .inline-box{
@@ -414,23 +447,39 @@ ul.nav-homemenu li {
     }
 
     .aside-box{
-        width: 100%;  
+        position: relative;
+        width: fit-content;
+        height: fit-content;  
     }
 
     .internal-box-division{
-        width: 100%;  
+        width: 100%; 
+        height: fit-content; 
     }
     
-    .internal-box-image{
-        width: 100%;  
+    #ib1, #ib2, #ib3{
+        height: 300px;
+        width: 90%;  
     }
 
     .login{
         height: 100%;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .login>form>div>label{
+        font-size: 10pt;
+    }
+
+    .login>form{
+        margin: 1;
     }
     
     .extra-space{
         height: 100%;
+        width: 350px;
     }
     
 }
@@ -460,7 +509,7 @@ ul.nav-homemenu li {
         margin-top: -30px;
         margin-left: -150px;
         order: 2;
-      }
+    }
       
     .center-box{
         display: flex;
@@ -468,13 +517,13 @@ ul.nav-homemenu li {
         margin-top: 50px;
     }
     
-      #checkbox-menu{
+    #checkbox-menu{
         display: flex;
         position: absolute;
         opacity: 0;
-      }
+    }
       
-      label{
+    #labelmenu{
         background-color: rgb(0, 0, 0, .9);
         border-radius: 5px;
         cursor: pointer;
@@ -482,9 +531,9 @@ ul.nav-homemenu li {
         display: flex;
         height: 50px;
         width: 75px;
-      }
+    }
       
-      label span{
+    #labelmenu span{
         position: absolute;
         margin: 15px 11px;
         display: block;
@@ -493,40 +542,40 @@ ul.nav-homemenu li {
         border-radius: 30px;
         background: #6684b4;
         transition: 0.25s ease-in-out;
-      }
+    }
       
-      label span:nth-child(1){
+    #labelmenu span:nth-child(1){
         top: 0;
-      }
+    }
       
-      label span:nth-child(2){
+    #labelmenu span:nth-child(2){
         top: 8px;
-      }
+    }
       
-      label span:nth-child(3){
+    #labelmenu span:nth-child(3){
         top: 16px;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(1){
+    #checkbox-menu:checked + label span:nth-child(1){
         transform: rotate(-45deg);
         top: 8px;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(2){
+    #checkbox-menu:checked + label span:nth-child(2){
         opacity: 0;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(3){
+    #checkbox-menu:checked + label span:nth-child(3){
         transform: rotate(45deg);
         top:8px;
-      }
+    }
       
-      #checkbox-menu:checked ~ .hidden{
+    #checkbox-menu:checked ~ .hidden{
         opacity: 1;
         transition: .5s;
-      }
+    }
       
-      .hidden{
+    .hidden{
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -539,10 +588,10 @@ ul.nav-homemenu li {
         padding: 10px;
         font-family: 'Palatino';
         z-index: 2;
-      }
+    }
     
-      .hidden a{
+    .hidden a{
         color: antiquewhite;
         text-decoration: none;
-      }
+    }
 }
