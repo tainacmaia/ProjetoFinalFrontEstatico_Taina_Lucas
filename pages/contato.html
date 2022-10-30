@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/stylecontato.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h3 id="msg"></h3>
+    <form>
+        <label>Nome</label>
+        <input id="input1" type="text" name="nome" placeholder="Nome" required>
+        <label>E-mail</label>
+        <input id="input2" type="email" name="email" placeholder="name@example.com" required>
+        <label>Telefone</label>
+        <input id="input3" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        <label>Título da Mensagem</label>
+        <input id="input4" type="text" name="titulo" placeholder="Título da Mensagem" required>
+        <label>Mensagem</label>
+        <input id="input5" type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+
+        <input type="submit" id="sub">
+    </form>
+    <script src="../JS/scriptcontato.js"></script>
 </body>
 </html>

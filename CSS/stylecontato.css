@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: grid;
+    width: 1000px;
+    flex-direction: row;
+    line-height: 30px;
+}
+
+#input5{
+    height: 100px;
+}
+
+#sub{
+    margin-top: 20px;
+    width: 90px;
+    justify-self: center;
+}
