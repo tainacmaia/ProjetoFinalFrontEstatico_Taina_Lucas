@@ -319,6 +319,21 @@ input{
     text-shadow: 2px 2px black;
 }
 
+.end-box p{
+    z-index: 3;
+}
+
+
+#fire{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    vertical-align: bottom;
+    /* z-index: 3; */
+    /* bottom: 0px; */
+    margin-top: -180px;
+}
+
 .back-top{
     text-align: center;
     margin: 10px;
