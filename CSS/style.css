@@ -145,11 +145,19 @@ main{
     border: 5px solid red;
 }
 
-.internal-box-division>div>h1{
+.internal-box-division>h1{
     color: #62E4E0;
     margin: 10px 0 0;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+
+.internal-box-division>p{
+    color: #D8DBB3;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    line-height: 175%;
+    border: 5px solid green;
 }
 
 .readmore{
