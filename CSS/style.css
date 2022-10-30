@@ -1,6 +1,7 @@
 body{
     background-color: rgba(0, 11, 13);
     overflow-x: hidden;
+    word-wrap:break-word;
 }
 
 header{
@@ -301,6 +302,16 @@ form{
     width: 100%;
     height: 50%;
     border: 5px solid red;
+    line-height: 30px;
+}
+
+.extra-space ul{
+    text-align: start;
+    margin: 30px 15px;
+}
+
+.extra-space li{
+    text-decoration: none;
 }
 
 footer{
@@ -399,7 +410,6 @@ ul.nav-homemenu li {
 @media screen and (max-width: 1045px) {
 
     html, body {
-        word-wrap:break-word;
         height: auto;
         width: 100%;
     }
