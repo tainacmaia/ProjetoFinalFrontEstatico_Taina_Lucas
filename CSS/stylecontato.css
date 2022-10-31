@@ -4,6 +4,45 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+nav{
+    position: absolute;
+}
+
+.menu{
+    display: flex;
+    position: absolute;
+    list-style-type: none;
+    font-size: 20pt;
+    justify-content: space-around;
+    margin-top: auto;
+    z-index: 1;
+}
+
+.menu li{
+    display: flex;
+    position: relative;
+}
+
+.menu a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+#menuborder{
+    background-color: black;
+    opacity: 70%;
+    height: 40px;
+    width: 100%;
+}
+
+.menu ul li:after {
+    content: '';
+    background: url('../Imgs/Amenuseparator.png') center no-repeat;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
 form{
     display: grid;
     width: 1000px;
@@ -15,8 +54,12 @@ form{
     height: 100px;
 }
 
-#sub{
+#sub, #reset{
     margin-top: 20px;
     width: 90px;
     justify-self: center;
+}
+
+h3[data-value="Enviado com sucesso!"] ~ .form{
+    display: none;
 }
