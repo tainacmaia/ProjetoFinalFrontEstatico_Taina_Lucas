@@ -28,3 +28,4 @@ function start() {
 }
 
 window.addEventListener("load", start)
+// btn.addEventListener('click', start)

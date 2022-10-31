@@ -13,7 +13,6 @@ header{
     justify-content: center;
     width: 100%;
     height: 150px;
-    /* border: 5px solid red; */
     position: relative;
 
 }
@@ -23,14 +22,12 @@ header{
     justify-content:center;
     justify-self: center;
     margin-top: 30px;
-    /* border: 5px solid green; */
 }
 
 .dropdown {
     display: flex;
     flex-direction: column;
     position: fixed;
-    /* border: 5px solid orange; */
     width: 100%;
     z-index: 10;
 }
@@ -60,7 +57,6 @@ header{
     padding: 5px 5px;
     text-decoration: none;
     font-size: 22px;
-    /* border: 1px solid pink; */
 }
 
 .show {
@@ -97,7 +93,6 @@ header{
     margin-left: 70px;
     width: 300px;
     height: 100%;
-    /* border: 2px solid yellow; */
     opacity: 1;
     
 }
@@ -127,7 +122,6 @@ header{
 #space{
     display: flex;
     width: fit-content;
-    /* border: 5px solid gray; */
 }
 
 .descvillans {
@@ -135,20 +129,17 @@ header{
     position: relative;
     width: 1500px;
     height: 700px;
-    border: 5px solid purple;
 }
 
 #oldscroll{
   position: absolute;
-  /* border: 5px solid gold; */
 }
 
-.vil {
+#vil {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid white;
   flex-direction:column-reverse;
   justify-content: center;
   align-items: center;
@@ -156,40 +147,38 @@ header{
   margin-top: -30px;
 }
 
-.vil>p{
+#vil>p{
   margin-top: 20px;
   width: 500px;
   height: 220px;
-  /* border: 5px solid blue; */
   font-size: 28px;
   font-family: 'OldManEloquentW01-Reg';
 }
 
-.vil>img{
+#vil>img{
   object-fit: cover;
   width: 220px;
   height: 220px;
 }
-/* #slider {
-  border: 2px solid green;
-  width: 100%;
-  height: 100vw;
-  position: absolute;
-}
 
-#slider div{
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 800ms;
-}
-
-#slider div.selected { 
+.visible {
   opacity: 1;
-  z-index: 2;
-} */
+  visibility: visible;
+  display: block;
+  transition-delay: 5s;
+  transition-duration: 4s ;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hide;
+  display: none;
+}
+
+.selected {
+  background-color: #fd6408;
+  color: White;
+}
 
 footer{
     display: flex;
