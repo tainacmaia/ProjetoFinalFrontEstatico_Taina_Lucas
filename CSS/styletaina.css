@@ -8,13 +8,15 @@
 
 html, body {
     height: 100%;
-  }
+
+}
 
 body{
     background-image: url('../Imgs/heroes/fire-background2.jpg');
     background-size: cover;
     overflow: hidden;
-    color: antiquewhite;
+    color: antiquewhite;     
+    cursor: url('../Imgs/heroes/cursor.cur'), default;   
 }
 
 /* Menu */
@@ -55,6 +57,10 @@ body{
     border-radius: 30px;
     background: #b97f12;
     transition: 0.25s ease-in-out;
+  }
+
+  label:hover{
+    cursor: url('../Imgs/heroes/cursor.cur'), default;  
   }
   
   label span:nth-child(1){
@@ -101,6 +107,10 @@ body{
     padding: 10px;
     font-family: 'Palatino';
     z-index: 2;
+  }
+
+  .hidden a:hover {
+    cursor: url('../Imgs/heroes/cursor.cur'), default;  
   }
 
   .hidden a{
@@ -170,6 +180,10 @@ audio{
     width: 50px;
     margin: 10px;
     font-size: 30pt;
+}
+
+#sound-button-style:hover{
+    cursor: url('../Imgs/heroes/cursor.cur'), default;  
 }
 
 .divider-rule{
