@@ -52,17 +52,33 @@ window.onclick = function (event) {
     }
 }
 
-let fireContainer = document.getElementById("fire-container");
-let smogContainer = document.getElementById("smog-container");
-function createParticles(fireContainer, num, leftSpacing) {
-  for (let i = 0; i < num; i += 1) {
-    let particle = document.createElement("div");
-    particle.style.left = `calc((100% - 5em) * ${i / leftSpacing})`;
-    particle.setAttribute("class", "particle");
-    particle.style.animationDelay = 4 * Math.random() + "s";
-    fireContainer.appendChild(particle);
-  }
+let time = 1000,
+    currentImageIndex = 0,
+    images = document
+                .querySelectorAll("#slider div")
+    max = images.length;
+
+function nextImage() {
+
+    images[currentImageIndex]
+        .classList.remove("selected")
+
+    currentImageIndex++
+
+    /*if(currentImageIndex >= max)
+        currentImageIndex = 0*/   /*aqui é onde faz ficar o loopinfinito*/
+
+    images[currentImageIndex]
+        .classList.add("selected")
 }
 
-createParticles(fireContainer, 60, 60);
-createParticles(smogContainer, 30, 30);
+function start() {
+    setInterval(() => {
+        // troca de imagem
+        nextImage()
+    }, time)
+    
+
+}
+
+window.addEventListener("click", start)

@@ -1,198 +1,34 @@
-:root {
-    --fireColor1: #ff5000;
-    --fireColor2: rgba(255, 80, 0, 0);
-    --fireDuration: 1s;
-    --blur: 0.4px;
-    --fireSize: 90px;
-    --smogColor1: rgb(49, 48, 48);
-    --smogColor2: rgba(255, 80, 0, 0);
-    --smogDuration: 2s;
-    --smogSize: 120px;
-  }
-
 body{
     background-image: url('../Imgs/Villains/Tiamat_2560x1600_0.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 header{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 25%;
-    border: 2px solid red;
-    position: fixed;
+    height: 150px;
+    /* border: 5px solid red; */
+    position: relative;
 }
 
-.menuvillansbackground{
-    width: 30%;
-    background-color: black;
-    opacity: 0.6;
-    height: 1200px;
-}
-.menuvillans {
+.title{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 40%;
-    margin-left: 10%;
-    width: 70%;
-    height: 60%;
-    border: 2px solid yellow;
-    opacity: 1;
-    
-}
-
-.menuvillans>button {
-    padding: 2%;
-    line-height: 27px;
-}
-
-.boss{
- /*
-
-#fire-container,
-#smog-container {
-  font-size: 24px;
-  filter: blur(var(--blur));
-  -webkit-filter: blur(var(--blur));
-  position: relative;
-  width: 10em;
-  height: 12em;
-}
-
-#fire-container .particle {
-  animation: rise var(--fireDuration) ease-in infinite;
-  background-image: radial-gradient(
-    var(--fireColor1) 30%,
-    var(--fireColor2) 70%
-  );
-  border-radius: 50%;
-  mix-blend-mode: screen;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  width: var(--fireSize);
-  height: var(--fireSize);
-}
-
-#smog-container .particle {
-  animation: rise var(--smogDuration) ease-in infinite;
-  background-image: radial-gradient(
-    var(--smogColor1) 30%,
-    var(--smogColor2) 70%
-  );
-  border-radius: 50%;
-  mix-blend-mode: screen;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  width: var(--smogSize);
-  height: var(--smogSize);
-}
-
-#buttons {
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-button {
-  margin: 10px;
-  width: 200px;
-  height: 50px;
-  border-radius: 30px;
-  position: absolute;
-  bottom: 0px;
-  font-weight: 900;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  font-family: system-ui;
-  -webkit-box-shadow: 0px 15px 24px -9px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 15px 24px -9px rgba(255, 255, 255, 0.2);
-}
-
-#yeah,
-#nah {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#confirm {
-  background-color: #fd6408;
-  color: #313131;
-  transition: all 0.8s;
-}
-
-#confirm:hover {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
-  color: #fd6408;
-}
-
-#nah {
-  position: relative;
-  width: 300px;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#cancel {
-  background-color: #e9e9e9;
-  color: #313131;
-  transition: all 0.8s;
-}
-
-#cancel:hover {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
-  color: #ffffff;
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(0) scale(1);
-  }
-  25% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-10em) scale(0);
-  }
-}
-
-@keyframes fly-away {
-  0% {
-    opacity: 1;
-    filter: blur(1px);
-  }
-
-  100% {
-    transform: scale(0.3);
-    opacity: 0;
-    filter: blur(20px);
-    border-radius: 50%;
-  }
-} 
- */
-}
-
-.descvillans {
-    display: flex;
-    border: 2px solid purple;
+    justify-content:center;
+    justify-self: center;
+    /* border: 5px solid green; */
 }
 
 .dropdown {
     display: flex;
     flex-direction: column;
-    position: relative;
-    border: 2px solid black;
+    position: fixed;
+    /* border: 5px solid orange; */
+    width: 100%;
+    z-index: 10;
 }
 
 .dropbtn {
@@ -200,16 +36,16 @@ button {
     border: none;
     cursor: pointer;
     position: relative;
-    width: 10%;
+    width: 180px;
     height: auto;
 }
 
 .dropdown-content {
     display: none;
+    justify-content:center;
     position: relative;
     background-color: black;
-    min-width: 190px;
-    z-index: 1;
+    min-width: 180px;
 }
 
 .dropdown-content a {
@@ -219,7 +55,8 @@ button {
     font-family: Georgia, 'Times New Roman', Times, Serif;
     padding: 5px 5px;
     text-decoration: none;
-    border: 1px solid pink;
+    font-size: 22px;
+    /* border: 1px solid pink; */
 }
 
 .show {
@@ -238,6 +75,112 @@ button {
     padding-right: auto;
 }
 
+.menuvillansbackground{
+    margin-top: -200px;
+    margin-bottom: -100px;
+    padding-bottom: 280px;
+    width: 400px;
+    background-color: black;
+    opacity: 0.6;
+    height: 100%;
+}
+.menuvillans {
+    display: flex;
+    flex-direction: column;
+    line-height: 80px;
+    position: relative;
+    padding-top: 300px;
+    margin-left: 70px;
+    width: 300px;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    opacity: 1;
+    
+}
+
+.menuvillans>button {
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.boss{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+.boss:hover{
+  background-color: #fd6408;
+  color: White;
+  transition: all 0.8s;
+}
+
+#space{
+    display: flex;
+    width: fit-content;
+    /* border: 5px solid gray; */
+}
+
+.descvillans {
+    display: flex;
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    border: 5px solid purple;
+}
+
+#oldscroll{
+  position: absolute;
+  /* border: 5px solid gold; */
+}
+
+.vil {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  flex-direction:column-reverse;
+  margin-top: ;
+  margin-left: ;
+}
+
+.vil>p{
+  width: 150px;
+  height: 150px;
+}
+
+.vil>img{
+  width: 150px;
+  height: 150px;
+  /* object-fit: cover; */
+}
+/* #slider {
+  border: 2px solid green;
+  width: 100%;
+  height: 100vw;
+  position: absolute;
+}
+
+#slider div{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 800ms;
+}
+
+#slider div.selected { 
+  opacity: 1;
+  z-index: 2;
+} */
+
 footer{
     display: flex;
     justify-content: center;
@@ -248,20 +191,4 @@ footer{
 
 .footer-text{
     text-align: center;
-    padding-bottom: 20px;
 }
-
-.title{
-    display: flex;
-    justify-content:center;
-    padding: 40px;
-    border: 5px solid green;
-}
-
-img.animated-gif{
-    display: flex;
-    justify-content:center;
-    width: 1500px;
-    height: auto;
-    border: 5px solid yellow;
-  }
