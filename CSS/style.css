@@ -252,7 +252,7 @@ form{
 }
 
 .login>form{
-    margin: 30% 20%;
+    margin: 120px 20%;
     display: flex;
     position: relative;
     flex-direction: column;
