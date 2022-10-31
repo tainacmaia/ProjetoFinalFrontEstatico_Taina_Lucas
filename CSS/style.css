@@ -413,6 +413,7 @@ ul.nav-homemenu {
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
+    color: #6684b4;
 } /*arruma o texto de cada item do nav*/
 
 ul.nav-homemenu li {
