@@ -9,7 +9,13 @@ let form = document.querySelector("form");
             .then(res => res.text())
             .then(data =>{
                 document.querySelector("#msg").innerHTML = "Enviado com sucesso!"
-                // document.querySelector("#sub").value = "Enviado";
+                document.querySelector("#sub").value = "Enviado";
+                document.getElementById("input1").disabled = 'true';
+                document.getElementById("input2").disabled = 'true';
+                document.getElementById("input3").disabled = 'true';
+                document.getElementById("input4").disabled = 'true';
+                document.getElementById("input5").disabled = 'true';
+                document.getElementById("sub").disabled = 'true';
             });
         });
 

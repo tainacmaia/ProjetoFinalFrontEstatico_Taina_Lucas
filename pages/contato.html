@@ -8,6 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="menu" id="menuborder">
+        <ul class="menu">
+            <li class="menu"><a href="./index.html">HOME </a></li>
+            <li class="menu"><a href="./pages/taina.html">HERÓIS </a></li>
+            <li class="menu"><a href="./pages/lucas.html">VILÕES </a></li>
+            <li class="menu"><a href="./pages/contato.html">CONTATO </a></li>
+        </ul>
+    </nav> 
     <h3 id="msg"></h3>
     <form>
         <label>Nome</label>
@@ -22,6 +30,7 @@
         <input id="input5" type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
 
         <input type="submit" id="sub">
+        <input type="reset" id="reset" value="Novo envio" onclick="window.location.reload();">
     </form>
     <script src="../JS/scriptcontato.js"></script>
 </body>
