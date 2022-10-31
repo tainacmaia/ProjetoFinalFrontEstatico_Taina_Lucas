@@ -1,3 +1,5 @@
+@import url('//db.onlinewebfonts.com/c/9b0bd801f28d62c9fe2ad03ee1ddcd8f?family=OldManEloquentW01-Reg');
+
 body{
     background-image: url('../Imgs/Villains/Tiamat_2560x1600_0.jpeg');
     background-size: 100%;
@@ -13,12 +15,14 @@ header{
     height: 150px;
     /* border: 5px solid red; */
     position: relative;
+
 }
 
 .title{
     display: flex;
     justify-content:center;
     justify-self: center;
+    margin-top: 30px;
     /* border: 5px solid green; */
 }
 
@@ -146,19 +150,25 @@ header{
   height: 100%;
   border: 2px solid white;
   flex-direction:column-reverse;
-  margin-top: ;
-  margin-left: ;
+  justify-content: center;
+  align-items: center;
+  margin-left: -150px;
+  margin-top: -30px;
 }
 
 .vil>p{
-  width: 150px;
-  height: 150px;
+  margin-top: 20px;
+  width: 500px;
+  height: 220px;
+  /* border: 5px solid blue; */
+  font-size: 28px;
+  font-family: 'OldManEloquentW01-Reg';
 }
 
 .vil>img{
-  width: 150px;
-  height: 150px;
-  /* object-fit: cover; */
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
 }
 /* #slider {
   border: 2px solid green;

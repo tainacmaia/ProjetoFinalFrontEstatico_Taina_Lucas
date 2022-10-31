@@ -373,7 +373,7 @@ footer{
     position: relative;
 }
 
-#slider div{
+#slider img{
     opacity: 0;
     position: absolute;
     width: 100%;
