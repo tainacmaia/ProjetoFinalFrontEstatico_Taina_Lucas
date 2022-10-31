@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/moria-citadel');
+
 body{
     background-color: rgba(0, 11, 13);
     overflow-x: hidden;
@@ -92,7 +94,8 @@ header{
     width: 100%;
     margin-top: 760px;
     color: #D8DBB3;
-    font-size: 44pt;
+    font-size: 40pt;
+    font-family: 'Moria Citadel';
 }
 
 #silver-line{
@@ -331,6 +334,7 @@ form{
     /* border: 5px solid red; */
     line-height: 30px;
     color: #D8DBB3;
+    margin-top: -90px;
 }
 
 .extra-space ul{
@@ -459,6 +463,7 @@ ul.nav-homemenu li {
 
     #header-title{
         margin-top: 480px;
+        font-size: 35pt;
     }
 
     #banner{
@@ -531,6 +536,7 @@ ul.nav-homemenu li {
     .extra-space{
         height: 100%;
         width: 350px;
+        margin-top: 0px;
     }
     
 }
