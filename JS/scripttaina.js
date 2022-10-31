@@ -1,2 +1,2 @@
 var aud = document.getElementById("player");
-aud.volume = 0.1;
+aud.volume = 0.2;

@@ -1,6 +1,10 @@
+/* Importação de letras */
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 @import url('//db.onlinewebfonts.com/c/0e4522fb38c3b796270a852c5e6c0fb2?family=Palatino');
 @import url('http://fonts.cdnfonts.com/css/black-chancery');
+
+/* Configurações iniciais */
 
 html, body {
     height: 100%;
@@ -12,6 +16,8 @@ body{
     overflow: hidden;
     color: antiquewhite;
 }
+
+/* Menu */
 
 .menu{
     height: 100%;
@@ -102,6 +108,8 @@ body{
     text-decoration: none;
   }
 
+/* Header */
+
 header{
     height: 130px;
 }
@@ -175,6 +183,8 @@ audio{
     margin-top: -30px;
 }
 
+/* Main */
+
 main{
     background-image: url('../Imgs/heroes/Dragonic.jpg');
     background-size: cover;
@@ -182,6 +192,10 @@ main{
     height: 75%;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.opacity{
+    background-color: rgba(0, 11, 13, .8);
 }
 
 .main-box{
@@ -341,6 +355,8 @@ input{
     border-radius: 20px;
 }
 
+/* Footer */
+
 .end-box{
     display: flex;
     flex-direction: column;
@@ -367,7 +383,6 @@ input{
     width: 100%;
     vertical-align: bottom;
     z-index: 3;
-    /* bottom: 0px; */
     margin-top: -100px;
 }
 
@@ -385,9 +400,7 @@ input{
    padding-bottom: 20px;
 }
 
-.opacity{
-    background-color: rgba(0, 11, 13, .8);
-}
+
 
 @media screen and (max-width:600px){
     .menu{
