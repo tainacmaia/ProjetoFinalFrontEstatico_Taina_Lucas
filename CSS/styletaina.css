@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 @import url('//db.onlinewebfonts.com/c/0e4522fb38c3b796270a852c5e6c0fb2?family=Palatino');
-/* @import url('http://fonts.cdnfonts.com/css/cardinal'); */
-/* @import url('//db.onlinewebfonts.com/c/385b2e844755c43a7bf26dbc7de55fd2?family=Augusta'); */
 @import url('http://fonts.cdnfonts.com/css/black-chancery');
-/* @import url('http://fonts.cdnfonts.com/css/moria-citadel'); */
 
 html, body {
     height: 100%;
@@ -19,7 +16,8 @@ body{
 .menu{
     height: 100%;
     position: absolute;
-    margin: -130px 70px 0px;
+    margin: -130px 0px 0px;
+    z-index: 2;
   }
   
 .center-box{
@@ -123,6 +121,45 @@ header{
     font-size: 40pt;
     font-family: 'Cinzel Decorative';
     font-weight: 700;
+}
+
+.background-sound{
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+}
+
+audio{
+    display: flex;
+    opacity: 0.1;
+}
+
+.sound-align{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin: -100px 10px;
+}
+
+#sound-menu{
+    color: antiquewhite;
+    text-decoration: none;
+    width: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 30pt;
+    opacity: 0;
+}
+
+#sound-button-style{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255, 0);
+    color: antiquewhite;
+    width: 50px;
+    margin: 10px;
+    font-size: 30pt;
 }
 
 .divider-rule{
@@ -368,6 +405,38 @@ input{
     }
 }
 
+@media screen and (max-width: 800px){
+
+    .background-sound{
+        flex-direction: row;
+        justify-content: flex-end;
+        z-index: 4;
+    }
+
+    .sound-align{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sound-menu{
+        margin-top: 25px;
+        opacity: 1;
+    }
+
+
+    #btnControl:checked ~ #sound-button-style{
+    opacity: .5;
+    }
+
+    #btnControl:checked ~ #sound-button-style:hover{
+        opacity: 1;
+    }
+
+    #sound-button-style{
+        opacity: 0;
+    }
+}
+
 @media screen and (max-width:1045px){
     html, body {
         height: auto;
@@ -380,6 +449,10 @@ input{
 
     .header-box{
         padding-top: 5px;
+    }
+
+    .sound-align{
+        margin: -120px 10px;
     }
 
     .header-box h1{

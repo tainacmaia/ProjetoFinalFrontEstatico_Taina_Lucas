@@ -28,7 +28,21 @@
                 <li><a href="./contato.html">CONTATO</a></li>
                 </ul>
             </div>
-        </nav>          
+        </nav>
+        <section class="background-sound">
+            <div class="sound-align">
+                <input type="checkbox" id="btnControl"/>
+                <label id="sound-menu" for="btnControl">&#x266b;</label>
+                <button id="sound-button-style" onclick="document.getElementById('player').play()">&#x23F5;</button>
+                <button id="sound-button-style" onclick="document.getElementById('player').pause()">&#x23F8;</button>
+                <button id="sound-button-style" onclick="document.getElementById('player').volume+=0.1">&#x23F6;</button>
+                <button id="sound-button-style" onclick="document.getElementById('player').volume-=0.1">&#x23F7;</button>
+                <audio id="player" autoplay="autoplay" loop src="../Audio/TainaTheme.mp3" type="audio/mp3">
+                Seu navegador não suporta HTML5
+                </audio>   
+            </div>
+        </section>
+
         <hr class="divider-rule" id="first-divider">    
     </header>          
     <main>
@@ -100,4 +114,5 @@
         <img id="fire" src="../Imgs/heroes/fire5.gif" alt="">
     </footer>
 </body>
+<script src="../JS/scripttaina.js"></script>
 </html>
