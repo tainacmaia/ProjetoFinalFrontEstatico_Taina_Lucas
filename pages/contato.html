@@ -8,30 +8,51 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="menu" id="menuborder">
-        <ul class="menu">
-            <li class="menu"><a href="../index.html">HOME </a></li>
-            <li class="menu"><a href="./taina.html">HERÓIS </a></li>
-            <li class="menu"><a href="./lucas.html">VILÕES </a></li>
-            <li class="menu"><a href="./contato.html">CONTATO </a></li>
-        </ul>
-    </nav> 
-    <h3 id="msg"></h3>
-    <form>
-        <label>Nome</label>
-        <input id="input1" type="text" name="nome" placeholder="Nome" required>
-        <label>E-mail</label>
-        <input id="input2" type="email" name="email" placeholder="name@example.com" required>
-        <label>Telefone</label>
-        <input id="input3" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
-        <label>Título da Mensagem</label>
-        <input id="input4" type="text" name="titulo" placeholder="Título da Mensagem" required>
-        <label>Mensagem</label>
-        <input id="input5" type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+    <header>
+        <nav class="menu" id="menuborder">
+            <ul class="menu">
+                <li class="menu"><a href="../index.html">HOME </a></li>
+                <li class="menu"><a href="./taina.html">HERÓIS </a></li>
+                <li class="menu"><a href="./lucas.html">VILÕES </a></li>
+                <li class="menu"><a href="./contato.html">CONTATO </a></li>
+            </ul>
+        </nav>   
+        <nav class="cellphone-menu">
+            <div class="center-box">
+                <input type="checkbox" id="checkbox-menu">
+                <label id="" for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>     
+                <ul class="hidden">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./pages/taina.html">HERÓIS</a></li>
+                <li><a href="./pages/lucas.html">VILÕES</a></li>
+                <li><a href="./pages/contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+    <main class="contact">
+        <h3 id="msg"></h3>
+        <form>
+            <label>Nome</label>
+            <input id="input1" type="text" name="nome" placeholder="Nome" required>
+            <label>E-mail</label>
+            <input id="input2" type="email" name="email" placeholder="name@example.com" required>
+            <label>Telefone</label>
+            <input id="input3" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+            <label>Título da Mensagem</label>
+            <input id="input4" type="text" name="titulo" placeholder="Título da Mensagem" required>
+            <label>Mensagem</label>
+            <input id="input5" type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
 
-        <input type="submit" id="sub">
-        <input type="reset" id="reset" value="Novo envio" onclick="window.location.reload();">
-    </form>
-    <script src="../JS/scriptcontato.js"></script>
+            <input type="submit" id="sub">
+            <input type="reset" id="reset" value="Novo envio" onclick="window.location.reload();">
+        </form>
+        <script src="../JS/scriptcontato.js"></script>
+    </main>
+    
 </body>
 </html>

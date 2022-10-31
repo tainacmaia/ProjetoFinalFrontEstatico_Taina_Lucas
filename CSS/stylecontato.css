@@ -1,4 +1,7 @@
 body{
+    background: url(../Imgs/contactdragon.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: top;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,12 +12,21 @@ body{
 
 header{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
 }
 
 nav{
     display: flex;
+}
+
+.cellphone-menu{
+    display: none;
 }
 
 .menu{
@@ -47,14 +59,36 @@ nav{
     content: '';
     background: url('../Imgs/Amenuseparator.png') center no-repeat;
     vertical-align: middle;
-    padding-left: 20px;
+    padding: 0 10px;
+}
+
+.contact{
+    display: flex;
+    margin: 30px auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h3{
+    color: antiquewhite;   
 }
 
 form{
     display: flex;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, .8);
+    color: antiquewhite;
     width: 1000px;
     flex-direction: column;
     line-height: 30px;
+}
+
+form input{
+    background-color: antiquewhite;
 }
 
 #input5{
@@ -65,8 +99,125 @@ form{
     margin-top: 20px;
     width: 90px;
     justify-self: center;
+    align-self: center;
 }
 
 h3[data-value="Enviado com sucesso!"] ~ .form{
     display: none;
+}
+
+@media screen and (max-width: 1045px) {
+    form{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    header{
+        height: 100px;
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .cellphone-menu{
+        display: flex;
+        height: 100%;
+        position: absolute;
+        margin-top: 250px;
+        align-items: center;
+        order: 2;
+    }
+      
+    .center-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    #checkbox-menu{
+        display: flex;
+        position: absolute;
+        opacity: 0;
+    }
+      
+    .cellphone-menu label{
+        background-color: rgb(0, 0, 0, .9);
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        height: 50px;
+        width: 75px;
+    }
+      
+    .cellphone-menu label span{
+        position: absolute;
+        margin: 15px 11px;
+        display: block;
+        height: 5px;
+        width: 70%;
+        border-radius: 30px;
+        background: antiquewhite;
+        transition: 0.25s ease-in-out;
+    }
+      
+    .cellphone-menu label span:nth-child(1){
+        top: 0;
+    }
+      
+    .cellphone-menu  label span:nth-child(2){
+        top: 8px;
+    }
+      
+    .cellphone-menu label span:nth-child(3){
+        top: 16px;
+    }
+      
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+      
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(2){
+        opacity: 0;
+    }
+      
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px;
+    }
+      
+    #checkbox-menu:checked ~ .hidden{
+        opacity: 1;
+        transition: .5s;
+    }
+      
+    .hidden{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        line-height: 50px;
+        text-align: center;
+        font-size: 25pt;
+        opacity: 0;
+        background-color: rgb(0, 0, 0, .9);
+        width: 180px;
+        padding: 10px;
+        font-family: 'Palatino';
+        z-index: 2;
+    }
+    
+    .hidden a{
+        color: antiquewhite;
+        text-decoration: none;
+    }
+
+    form{
+        width: 300px;
+    }
 }
