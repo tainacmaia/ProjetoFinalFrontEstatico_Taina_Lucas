@@ -131,6 +131,8 @@ header{
     font-weight: 700;
 }
 
+/* Som */
+
 .background-sound{
     display: flex;    
     flex-direction: column;
@@ -423,6 +425,8 @@ input{
     width: 100vw;
     height: 100vw;
 }
+
+/* Media configs */
 
 @media screen  and (min-height: 601px) and (max-height:1000px){
     #slider img.selected { 

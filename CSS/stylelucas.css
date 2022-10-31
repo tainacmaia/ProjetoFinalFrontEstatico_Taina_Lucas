@@ -22,6 +22,7 @@ header{
     justify-content:center;
     justify-self: center;
     margin-top: 30px;
+    margin-left: 70px;
 }
 
 
@@ -129,7 +130,7 @@ header{
 .descvillans {
     display: flex;
     position: relative;
-    margin-left: 200px;
+    margin-left: 150px;
     width: 1500px;
     height: 700px;
 }
