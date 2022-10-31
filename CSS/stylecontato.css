@@ -3,15 +3,22 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 nav{
-    position: absolute;
+    display: flex;
 }
 
 .menu{
     display: flex;
-    position: absolute;
     list-style-type: none;
     font-size: 20pt;
     justify-content: space-around;
@@ -44,9 +51,9 @@ nav{
 }
 
 form{
-    display: grid;
+    display: flex;
     width: 1000px;
-    flex-direction: row;
+    flex-direction: column;
     line-height: 30px;
 }
 
