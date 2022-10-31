@@ -1,6 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/moria-citadel');
+
 body{
     background-color: rgba(0, 11, 13);
     overflow-x: hidden;
+    word-wrap:break-word;
 }
 
 header{
@@ -13,7 +16,7 @@ header{
     background-position: top;
     width: 100%;
     height: 970px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .header-content-box{
@@ -24,7 +27,7 @@ header{
     position: absolute;
     align-self: flex-start;
     height: 100%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 #game-logo{
@@ -90,8 +93,18 @@ header{
     text-align: center;     
     width: 100%;
     margin-top: 760px;
-    color: white;
-    font-size: 44pt;
+    color: #D8DBB3;
+    font-size: 40pt;
+    font-family: 'Moria Citadel';
+}
+
+#silver-line{
+    display: flex;
+    position: absolute;
+    width: 1010px;
+    margin-top: 480px;
+    align-self: center;
+    justify-self: center;
 }
 
 main{
@@ -99,7 +112,7 @@ main{
     width: 100%;
     background-position: center;
     background-repeat:repeat;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .main-box{
@@ -107,20 +120,27 @@ main{
     align-items: flex-start;
     margin: auto;
     width: 1010px;
-    height: 100%;
-    /* talvez tenha que adicionar padding */
-    height: 1000px;
-    border: 5px solid red;  
+    height: 1100px;
+    /* border: 5px solid red;   */
 }
 
 .inline-box{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: auto;
-    width: 70%;
+    width: 60%;
     height: 100%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     color: white;
+}
+
+#white-divider{
+    position: relative;
+    align-self: center;
+    margin-top: -30px;
+    height: 20px;
+    width: 150px;
 }
 
 .internal-box{
@@ -131,7 +151,8 @@ main{
     position: relative;
     width: 100%;
     height: 30%;  
-    border: 5px solid red;
+    margin: 20px;
+    /* border: 5px solid red; */
 }
 
 .internal-box-division{
@@ -142,22 +163,23 @@ main{
     width: 65%;  
     height: 100%;  
     justify-content: center;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .internal-box-division>h1{
     color: #62E4E0;
     margin: 10px 0 0;
-    font-size: 22px;
+    font-size: 22pt;
     font-family: Georgia, 'Times New Roman', Times, Serif;
 }
 
 .internal-box-division>p{
     color: #D8DBB3;
-    font-size: 14px;
+    font-size: 13pt;
     font-family: Georgia, 'Times New Roman', Times, Serif;
+    margin: 10px;
     line-height: 175%;
-    border: 5px solid green;
+    /* border: 5px solid green; */
 }
 
 .readmore{
@@ -182,25 +204,44 @@ main{
     width: 35%;  
     height: 100%;  
     justify-content: center;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
-.internal-box-image>img{
-    max-width: 100%;
-    max-height: auto;
+#ib1{
+    background: url('../Imgs/Io.jpg')  no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ib2{
+    background: url('../Imgs/sidemapslight.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ib3{
+    background: url('../Imgs/battle.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .aside-box{
     display: flex;
+    position: relative;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     width: 30%;
     height: 100%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     color: white;
 }
+
+form{
+    padding-left: 20px;
+}
+
 
 .login{
     background: url(../Imgs/loginbg.jpg);
@@ -214,26 +255,26 @@ main{
 }
 
 .login>form{
-    margin: 30% 20%;
+    margin: 120px 20%;
     display: flex;
     position: relative;
     flex-direction: column;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
 }
 
 .login>form>h1{
     color: #69A0BA;
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, Serif;
-    margin: 5% 0 30% 0;
+    margin: 20px 0 20px;
 }
 
 .login>form>div>label{
     color: #D8DBB3;
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, Serif;
-    line-height: 175%;
-    border: 5px solid green;
+    line-height: 25px;
+    /* border: 5px solid green; */
 }
 
 .login>form>div>input{
@@ -257,20 +298,52 @@ main{
     color: #D5D4D9;
     overflow: visible;
     cursor: pointer;
-    line-height: 27px;
+    line-height: 30px;
     box-sizing: content-box;
     background: #126966;
     background: linear-gradient(to bottom, #0F5755 0, #1B9D99 20%, #126966 50%, #0A3D3B 80%, #0E5351 100%) no-repeat;
 }
 
+.reme{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#rememberme{
+    height: auto;
+    width: auto;
+}
+
+#lost-password{
+    margin-top: 15px;
+}
+
+#lost-password a{
+    color: #6684b4;
+}
+
 .extra-space{
     display: flex;
+    position: relative;
     justify-content: center; 
     flex-direction:column;
     text-align: center;
     width: 100%;
     height: 50%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
+    line-height: 30px;
+    color: #D8DBB3;
+    margin-top: -90px;
+}
+
+.extra-space ul{
+    text-align: start;
+    margin: 30px 15px;
+}
+
+.extra-space li{
+    text-decoration: none;
 }
 
 footer{
@@ -284,8 +357,8 @@ footer{
     width: 100%;
     height: 300px;
     padding-top: 30px;
-    color: white;
-    border: 5px solid red;
+    color: #D8DBB3;
+    /* border: 5px solid red; */
 }
 
 #space {
@@ -344,6 +417,7 @@ ul.nav-homemenu {
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
+    color: #6684b4;
 } /*arruma o texto de cada item do nav*/
 
 ul.nav-homemenu li {
@@ -375,10 +449,11 @@ ul.nav-homemenu li {
     
     .main-box, .header-box, .header-content-box, .end-box {
         width: 100%;
+        height: 100%;
     }
 
     header{
-        height: 700px;
+        height: 650px;
     }
 
     .header-box{
@@ -387,7 +462,8 @@ ul.nav-homemenu li {
     }
 
     #header-title{
-        margin-top: 500px;
+        margin-top: 480px;
+        font-size: 35pt;
     }
 
     #banner{
@@ -400,6 +476,12 @@ ul.nav-homemenu li {
         width: 484px;
     }
 
+    #silver-line{
+        margin-top: 330px;
+        height: 40%;
+        width: 100%;
+    }
+
     .main-box{
         flex-direction: column;
     }
@@ -407,30 +489,54 @@ ul.nav-homemenu li {
     .internal-box{
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     .inline-box{
-        width: 100%;  
+        width: 90%;
+        height: 100%;  
     }
 
     .aside-box{
-        width: 100%;  
+        position: relative;
+        width: fit-content;
+        height: fit-content;  
     }
 
     .internal-box-division{
-        width: 100%;  
+        width: 100%; 
+        height: fit-content; 
     }
     
+    #ib1, #ib2, #ib3{
+        height: 300px;
+        width: 90%;  
+    }
+
     .internal-box-image{
-        width: 100%;  
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .login{
         height: 100%;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .login>form>div>label{
+        font-size: 10pt;
+    }
+
+    .login>form{
+        margin: 1;
     }
     
     .extra-space{
         height: 100%;
+        width: 350px;
+        margin-top: 0px;
     }
     
 }
@@ -460,7 +566,7 @@ ul.nav-homemenu li {
         margin-top: -30px;
         margin-left: -150px;
         order: 2;
-      }
+    }
       
     .center-box{
         display: flex;
@@ -468,13 +574,13 @@ ul.nav-homemenu li {
         margin-top: 50px;
     }
     
-      #checkbox-menu{
+    #checkbox-menu{
         display: flex;
         position: absolute;
         opacity: 0;
-      }
+    }
       
-      label{
+    .cellphone-menu label{
         background-color: rgb(0, 0, 0, .9);
         border-radius: 5px;
         cursor: pointer;
@@ -482,9 +588,9 @@ ul.nav-homemenu li {
         display: flex;
         height: 50px;
         width: 75px;
-      }
+    }
       
-      label span{
+    .cellphone-menu label span{
         position: absolute;
         margin: 15px 11px;
         display: block;
@@ -493,40 +599,40 @@ ul.nav-homemenu li {
         border-radius: 30px;
         background: #6684b4;
         transition: 0.25s ease-in-out;
-      }
+    }
       
-      label span:nth-child(1){
+    .cellphone-menu label span:nth-child(1){
         top: 0;
-      }
+    }
       
-      label span:nth-child(2){
+    .cellphone-menu  label span:nth-child(2){
         top: 8px;
-      }
+    }
       
-      label span:nth-child(3){
+    .cellphone-menu label span:nth-child(3){
         top: 16px;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(1){
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(1){
         transform: rotate(-45deg);
         top: 8px;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(2){
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(2){
         opacity: 0;
-      }
+    }
       
-      #checkbox-menu:checked + label span:nth-child(3){
+    #checkbox-menu:checked + .cellphone-menu label span:nth-child(3){
         transform: rotate(45deg);
         top:8px;
-      }
+    }
       
-      #checkbox-menu:checked ~ .hidden{
+    #checkbox-menu:checked ~ .hidden{
         opacity: 1;
         transition: .5s;
-      }
+    }
       
-      .hidden{
+    .hidden{
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -539,10 +645,16 @@ ul.nav-homemenu li {
         padding: 10px;
         font-family: 'Palatino';
         z-index: 2;
-      }
+    }
     
-      .hidden a{
+    .hidden a{
         color: antiquewhite;
         text-decoration: none;
-      }
+    }
+
+    #ib1, #ib2, #ib3{
+        height: 300px;
+        width: 80%;  
+        margin-left: -15px;
+    }
 }
