@@ -1,3 +1,15 @@
+:root {
+    --fireColor1: #ff5000;
+    --fireColor2: rgba(255, 80, 0, 0);
+    --fireDuration: 1s;
+    --blur: 0.4px;
+    --fireSize: 90px;
+    --smogColor1: rgb(49, 48, 48);
+    --smogColor2: rgba(255, 80, 0, 0);
+    --smogDuration: 2s;
+    --smogSize: 120px;
+  }
+
 body{
     background-image: url('../Imgs/Villains/Tiamat_2560x1600_0.jpeg');
     background-size: 100%;
@@ -7,63 +19,180 @@ body{
 
 header{
     width: 100%;
-    height: 100%;
-    border: 2px solid blue;
+    height: 25%;
+    border: 2px solid red;
     position: fixed;
 }
 
-
-#space {
-    Width: 100%;
-    height: 100vw;
+.menuvillansbackground{
+    width: 30%;
+    background-color: black;
+    opacity: 0.6;
+    height: 1200px;
+}
+.menuvillans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 40%;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+    border: 2px solid yellow;
+    opacity: 1;
+    
 }
 
-.home-nav {
-    background: #031111;
-    background: rgba(3, 17, 17, 0.8);
-    padding: 2px;
-    position: relative;
-    z-index: 499;
-} /*deixa o fundo cinza e opaco*/
+.menuvillans>button {
+    padding: 2%;
+    line-height: 27px;
+}
 
-.home-nav-inner {
-    text-align: center;
-    margin: 0 auto;
-} /*alinha todo o nav no centro*/
+.boss{
+ /*
 
-ul.nav-homemenu {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 17px;
-    padding-right: 17px;
-} /*alinha os itens do nav com o fundo cinza opaco*/
+#fire-container,
+#smog-container {
+  font-size: 24px;
+  filter: blur(var(--blur));
+  -webkit-filter: blur(var(--blur));
+  position: relative;
+  width: 10em;
+  height: 12em;
+}
 
-.nav-homemenu>li>a{
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, Serif;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: left;
-} /*arruma o texto de cada item do nav*/
+#fire-container .particle {
+  animation: rise var(--fireDuration) ease-in infinite;
+  background-image: radial-gradient(
+    var(--fireColor1) 30%,
+    var(--fireColor2) 70%
+  );
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: var(--fireSize);
+  height: var(--fireSize);
+}
 
-ul.nav-homemenu li {
-    position: relative;
-    z-index: 5;
-    display: block;
-    float: left;
-    background: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-} /*deixa os itens lado a lado*/
+#smog-container .particle {
+  animation: rise var(--smogDuration) ease-in infinite;
+  background-image: radial-gradient(
+    var(--smogColor1) 30%,
+    var(--smogColor2) 70%
+  );
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: var(--smogSize);
+  height: var(--smogSize);
+}
+
+#buttons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 900;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: system-ui;
+  -webkit-box-shadow: 0px 15px 24px -9px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 15px 24px -9px rgba(255, 255, 255, 0.2);
+}
+
+#yeah,
+#nah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirm {
+  background-color: #fd6408;
+  color: #313131;
+  transition: all 0.8s;
+}
+
+#confirm:hover {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  color: #fd6408;
+}
+
+#nah {
+  position: relative;
+  width: 300px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cancel {
+  background-color: #e9e9e9;
+  color: #313131;
+  transition: all 0.8s;
+}
+
+#cancel:hover {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  color: #ffffff;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10em) scale(0);
+  }
+}
+
+@keyframes fly-away {
+  0% {
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+    filter: blur(20px);
+    border-radius: 50%;
+  }
+} 
+ */
+}
+
+.descvillans {
+    display: flex;
+    border: 2px solid purple;
+}
 
 .dropdown {
     display: flex;
     flex-direction: column;
     position: relative;
-    border: 2px solid red;
+    border: 2px solid black;
 }
 
 .dropbtn {
@@ -84,10 +213,13 @@ ul.nav-homemenu li {
 }
 
 .dropdown-content a {
+    display: flex;
+    justify-content: center;
     color: white;
-    font-family: helvetica;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
     padding: 5px 5px;
     text-decoration: none;
+    border: 1px solid pink;
 }
 
 .show {
@@ -111,17 +243,12 @@ footer{
     justify-content: center;
     margin: auto;
     width: 100%;
-    padding-top: 30px;
     color: white;
-    border: 2px solid red;
 }
 
 .footer-text{
     text-align: center;
-}
-
-.footer-text p{
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .title{
@@ -138,24 +265,3 @@ img.animated-gif{
     height: auto;
     border: 5px solid yellow;
   }
-
-  #slider {
-    display:flex;
-    width: 100%;
-    max-width: 5000px;
-    height: 100vw;
-    max-height: 5000px;
-    position: relative;
-}
-
-#slider img{
-    opacity: 0;
-    position: absolute;
-    width: 800px;
-    height: auto;
-    object-fit: cover;
-}
-
-#slider img.selected { 
-    opacity: 1;
-}
